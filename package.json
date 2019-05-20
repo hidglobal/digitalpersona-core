@@ -1,0 +1,76 @@
+{
+  "name": "@digitalpersona/core",
+  "globalObject": "dp.core",
+  "version": "0.1.5",
+  "publishConfig": {
+    "registry": "http://localhost:4873"
+  },
+  "description": "DigitalPersona Web Access Core library",
+  "author": "HID Global",
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "Andrey Bronnikov",
+      "email": "andrey.bronnikov@hidgroup.com"
+    }
+  ],
+  "keywords": [
+    "DigitalPersona",
+    "authentication",
+    "identification",
+    "jwt",
+    "policy",
+    "claims"
+  ],
+  "module": "./dist/es5/index.js",
+  "main": "./dist/es5.bundles/index.umd.js",
+  "browser": "./dist/es5.bundles/index.umd.js",
+  "es2015": "./dist/es6/index.js",
+  "typings": "./dist/typings/index.d.ts",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "build": "npm run clean && npm run tsc-all && npm run rollup",
+    "tsc": "tsc",
+    "tsc-es5": "tsc --p ./build/tsconfig/tsconfig.es5.json",
+    "tsc-es6": "tsc --p ./build/tsconfig/tsconfig.es6.json",
+    "tsc-all": "npm run tsc && npm run tsc-es5 && npm run tsc-es6",
+    "rollup-es5": "rollup -c -c rollup.config.js --environment target:es5",
+    "rollup-es5-min": "rollup -c -c rollup.config.js --environment target:es5,minify",
+    "rollup-es6": "rollup -c -c rollup.config.js --environment target:es6",
+    "rollup-es6-min": "rollup -c -c rollup.config.js --environment target:es6,minify",
+    "rollup": "npm run rollup-es5 && npm run rollup-es5-min && npm run rollup-es6 && npm run rollup-es6-min",
+    "test": "karma start",
+    "test-once": "karma start --single-run",
+    "test-private": "set UUT=private&& karma start",
+    "test-common": "set UUT=common&& karma start",
+    "local-npm": "start verdaccio",
+    "api": "npx api-extractor run --local --verbose",
+    "api-doc": "npx api-documenter markdown -i ./dist/api -o ./dist/api/doc",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "tslib": "^1.9.3",
+    "u2f-api": "^1.0.10"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^3.3.9",
+    "@types/node": "^12.0.0",
+    "fetch-mock": "^7.3.1",
+    "jasmine": "^3.3.1",
+    "jasmine-core": "^3.3.0",
+    "karma": "^4.0.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-ie-launcher": "^1.0.0",
+    "karma-jasmine": "^2.0.1",
+    "karma-typescript": "^4.0.0",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.6.3",
+    "rollup": "^1.6.0",
+    "rollup-plugin-node-resolve": "^4.0.1",
+    "rollup-plugin-terser": "^4.0.4",
+    "rollup-plugin-typescript2": "^0.21.0",
+    "terser": "^3.17.0",
+    "tslint": "^5.14.0",
+    "typescript": "^3.4.5"
+  }
+}
