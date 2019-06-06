@@ -1,4 +1,5 @@
 import { UserNameType } from './userNameType';
+import { JWT, JSONWebToken } from '../jwt';
 
 export class User
 {
@@ -15,11 +16,26 @@ export class User
                                         : UserNameType.DP);
     }
 
+    public isAnonymous(): boolean {
+        return !this.name || this.name.length === 0;
+    }
+    public isEveryone(): boolean {
+        return this.name === "*";
+    }
+
     public static Anonymous(): User
     {
         return new User("", UserNameType.Unknown);
     }
     public static Everyone(): User {
         return new User("*", UserNameType.Unknown);
+    }
+    public static fromJWT(token: JSONWebToken, type?: UserNameType): User
+    {
+        const claims = JWT.claims(token);
+        const user = claims.sub && (claims.sub instanceof User) ? claims.sub :
+                     claims.wan ? new User(claims.wan, type) :
+                     claims.sub ? new User(claims.sub, type || UserNameType.DP) : User.Anonymous();
+        return user;
     }
 }

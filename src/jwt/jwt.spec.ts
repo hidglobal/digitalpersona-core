@@ -1,5 +1,6 @@
 import { JWT } from './jwt';
 import { ClaimSet, ClaimName } from './claims';
+import { User } from '../users';
 
 describe("JWT: ", () =>
 {
@@ -13,7 +14,7 @@ describe("JWT: ", () =>
         typ: "JWT",
         alg: " RS256"
     };
-    const payload: ClaimSet = {
+    const payload = {
         jti: "{AC184A13-60AB-40e5-A514-E10F777EC2F9}",
         iss: "altus-01.digitalpersona.com",
         iat: 1300819380,
@@ -32,7 +33,7 @@ describe("JWT: ", () =>
             expect(claims.jti).toBe(payload.jti);
             expect(claims.iss).toBe(payload.iss);
             expect(claims.iat).toBe(payload.iat);
-            expect(claims.sub).toEqual(payload.sub);
+            expect(claims.sub).toEqual(new User(payload.sub.name, payload.sub.type));
             expect(claims.crd).toEqual(payload.crd);
             expect(claims[ClaimName.IssuedAt]).toBe(payload.iat);
         })

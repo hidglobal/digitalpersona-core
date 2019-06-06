@@ -32,7 +32,7 @@ export interface ClaimSet {
     readonly aud?: string;
     readonly exp?: number;
     readonly nbf?: number;
-    readonly sub?: string | User;
+    readonly sub?: string|User;
     // private claims
     readonly dom?: string;
     readonly uid?: string;

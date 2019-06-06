@@ -3,6 +3,6 @@
 export * from './http';
 export * from './biometrics';
 export * from './encoders';
-export * from './tokens';
+export * from './jwt';
 export * from './credentials';
 export * from './users';

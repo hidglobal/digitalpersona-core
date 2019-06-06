@@ -1,5 +1,6 @@
 import { Utf16 } from '../encoders';
 import { ClaimSet } from './claims';
+import { User } from '../users';
 
 class JWTHeader {
     public readonly typ?: string;
@@ -34,16 +35,28 @@ export class JWT
             };
         } else {
             // unencrypted payload, use claims from the payload only
-            const payload = JSON.parse(Utf16.fromBase64Url(parts[1]));
+            let payload = JSON.parse(Utf16.fromBase64Url(parts[1]));
+            // convert "subject" to a User type
+            if (typeof(payload.sub) === "object") {
+                const { name, type } = payload.sub;
+                payload.sub = new User(name, type)
+            }
             return payload as ClaimSet;
         }
     }
 
-    public static validate(jwt: JSONWebToken): Error[]|null
+    public static errors(jwt: JSONWebToken): Error[]|null
     {
-        // TODO: checks:
+        const e: Error[] = [];
+        const claims = JWT.claims(jwt);
+        const now = new Date().getTime();
         // iat < nbf < now < exp
-        // n
-        return null;
+        if (claims.iat && claims.nbf && claims.iat >= claims.nbf)
+            e.push(new Error('JWT.Error.IssueTimeLaterThanNotBefore'))
+        if (claims.nbf && claims.nbf >= now)
+            e.push(new Error('JWT.Error.NotEffectiveYet'))
+        if (claims.exp && claims.exp <= now)
+            e.push(new Error('JWT.Error.Expired'))
+        return e.length > 0 ? e : null;
     }
 }
