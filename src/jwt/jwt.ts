@@ -49,7 +49,7 @@ export class JWT
     {
         const e: Error[] = [];
         const claims = JWT.claims(jwt);
-        const now = new Date().getTime();
+        const now = new Date().getTime()/1000; // seconds since the epoch start
         // iat < nbf < now < exp
         if (claims.iat && claims.nbf && claims.iat >= claims.nbf)
             e.push(new Error('JWT.Error.IssueTimeLaterThanNotBefore'))

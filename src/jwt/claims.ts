@@ -27,11 +27,11 @@ export enum ClaimName {
 export interface ClaimSet {
     // registered claims
     readonly jti?: string;
-    readonly iss?: string;
-    readonly iat?: number;
+    readonly iss?: string;          // issuer
+    readonly iat?: number;          // issued at time, seconds since epoch
     readonly aud?: string;
-    readonly exp?: number;
-    readonly nbf?: number;
+    readonly exp?: number;          // expiration time, seconds since epoch
+    readonly nbf?: number;          // valid not before than time, seconds since epoch
     readonly sub?: string|User;
     // private claims
     readonly dom?: string;
