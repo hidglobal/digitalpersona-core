@@ -31,15 +31,15 @@ export class JWT
             // Encrypted nested JWT may replicate some claims in the header to be publicly accessible.
             return {
                 ...header,          // include all claims possibly replicated in the header
-                ...new JWTHeader()  // exclude JWT Header properties ("typ", "cty", "alg")
+                ...new JWTHeader(), // exclude JWT Header properties ("typ", "cty", "alg")
             };
         } else {
             // unencrypted payload, use claims from the payload only
-            let payload = JSON.parse(Utf16.fromBase64Url(parts[1]));
+            const payload = JSON.parse(Utf16.fromBase64Url(parts[1]));
             // convert "subject" to a User type
             if (typeof(payload.sub) === "object") {
                 const { name, type } = payload.sub;
-                payload.sub = new User(name, type)
+                payload.sub = new User(name, type);
             }
             return payload as ClaimSet;
         }
@@ -49,14 +49,14 @@ export class JWT
     {
         const e: Error[] = [];
         const claims = JWT.claims(jwt);
-        const now = new Date().getTime()/1000; // seconds since the epoch start
+        const now = new Date().getTime() / 1000; // seconds since the epoch start
         // iat < nbf < now < exp
         if (claims.iat && claims.nbf && claims.iat >= claims.nbf)
-            e.push(new Error('JWT.Error.IssueTimeLaterThanNotBefore'))
+            e.push(new Error('JWT.Error.IssueTimeLaterThanNotBefore'));
         if (claims.nbf && claims.nbf >= now)
-            e.push(new Error('JWT.Error.NotEffectiveYet'))
+            e.push(new Error('JWT.Error.NotEffectiveYet'));
         if (claims.exp && claims.exp <= now)
-            e.push(new Error('JWT.Error.Expired'))
+            e.push(new Error('JWT.Error.Expired'));
         return e.length > 0 ? e : null;
     }
 }

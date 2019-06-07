@@ -3,7 +3,7 @@ import { Credential } from './credential';
 export enum QuestionType
 {
     Regular,    // number <= 100
-    Custom      // number > 100
+    Custom,     // number > 100
 }
 export class Question
 {
@@ -50,31 +50,37 @@ export class Answer
 
 export type Answers = Answer[];
 
-export class SecurityQuestions extends Credential
-{
-    constructor(data: {questions?: Questions, answers?: Answers}) {
-        super(Credential.SecurityQuestions,
-            data.answers && data.questions
-                ? SecurityQuestions.canonicalize({ questions: data.questions, answers: data.answers })
-                : data.answers || data.questions || null
-        );
-    }
-
-    private static canonicalize(data: { questions: Questions, answers: Answers }) {
-        // take only answers with corresponding questions, then sort (NOTE: server requires inverse sort!)
-        const As = data.answers
-            .filter(a => data.questions.findIndex(q => q.number === a.number) >= 0)
-            .sort(a => -a.number);
-
-        // take only questions with corresponding answers, then sort (NOTE: server requires inverse sort!)
-        const Qs = data.questions
-            .filter(q => data.answers.findIndex(a => a.number === q.number) >= 0)
-            .sort(q => -q.number);
-
-        // now Qs and As correspond to each other and have the same rder. Zip then into a single array of enrollment data.
-        return Qs.map((q, i, qs) => ({
-            question: q,
-            answer: As[i]
-        }));
-    }
+export interface QuestionWithAnswer {
+    question: Question;
+    answer: Answer;
 }
+
+// export class SecurityQuestions extends Credential
+// {
+//     public constructor(data: string|object|null) {
+//         super(Credential.SecurityQuestions, data);
+//     }
+
+//     public static forAuthentication(answers: Answer[]) {
+//         return new SecurityQuestions(answers);
+//     }
+
+//     public static forEnrollment(data: QuestionWithAnswer[])
+//     {
+//         const equal = (a: QuestionWithAnswer, b: QuestionWithAnswer) =>
+//             a.question.number === b.question.number;
+//         const unique = (val: QuestionWithAnswer, idx: number, arr: QuestionWithAnswer[]) =>
+//             arr.findIndex(qa => equal(qa, val)) === idx;
+
+//         return new SecurityQuestions(data
+//             .filter(qa => qa.question.number === qa.answer.number)
+//             .filter(unique)
+//             .sort((a, b) => b.question.number - a.question.number)); // server requires reverse order
+//     }
+
+//     public static forDelete()
+//     {
+//         return new SecurityQuestions(null);
+//     }
+
+// }

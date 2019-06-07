@@ -51,4 +51,3 @@ export class PushNotification extends Credential
         super(Credential.OneTimePassword, "push");
     }
 }
-

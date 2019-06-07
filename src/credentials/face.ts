@@ -1,6 +1,7 @@
 import { Base64UrlString, Base64String, Base64Url } from '../encoders';
-import { BioSample, BioSampleFormat, BioSampleFormatOwner, BioSampleType, BioSampleEncryption, BioSampleHeader, BioSamplePurpose, BioFactor } from "../biometrics";
-import { Credential } from './credential';
+import {
+    BioSample, BioSampleFormat, BioSampleFormatOwner, BioSampleType, BioSampleEncryption,
+    BioSampleHeader, BioSamplePurpose, BioFactor } from "../biometrics";
 
 class FIRData
 {
@@ -8,13 +9,13 @@ class FIRData
 
     constructor(
         public readonly SDKVersion: number,
-        public readonly Data: Base64UrlString
+        public readonly Data: Base64UrlString,
     ){}
 }
 
 export enum FaceImageType
 {
-    Jpeg = 1
+    Jpeg = 1,
 }
 
 export class FaceImage
@@ -26,11 +27,11 @@ export class FaceImage
         public readonly ImageType: FaceImageType = FaceImageType.Jpeg,
     ){}
 
-    static fromDataURL(image: Base64String): FaceImage {
+    public static fromDataURL(image: Base64String): FaceImage {
         return new FaceImage(image.replace("data:image/jpeg;base64,", ""));
     }
 
-    static fromCanvas(canvas: HTMLCanvasElement, quality: number = 1.0): FaceImage {
+    public static fromCanvas(canvas: HTMLCanvasElement, quality: number = 1.0): FaceImage {
         return FaceImage.fromDataURL(canvas.toDataURL("image/jpeg", quality));
     }
 
@@ -47,16 +48,16 @@ export class FaceImage
                 BioSampleType.Raw,
                 purpose,
                 -1,
-                BioSampleEncryption.None
+                BioSampleEncryption.None,
             ),
-            Base64Url.fromJSON(this)
+            Base64Url.fromJSON(this),
         );
     }
 }
 
-export class Face extends Credential
-{
-    constructor(samples: BioSample[]) {
-        super(Credential.Face, samples)
-    }
-}
+// export class Face extends Credential
+// {
+//     constructor(samples: BioSample[]) {
+//         super(Credential.Face, samples)
+//     }
+// }
