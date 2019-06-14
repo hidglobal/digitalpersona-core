@@ -17,6 +17,7 @@ export enum ClaimName {
     // private DigitalPersona names
     IssuerDomain        = "dom",
     SubjectUid          = "uid",
+    ADGuid              = "ad_guid",
     CredentialsUsed     = "crd",
     Group               = "group",
     Role                = "role",
