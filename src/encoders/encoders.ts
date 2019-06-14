@@ -4,6 +4,7 @@ export type Utf16String     = string;
 export type Utf8String      = string;
 export type Base64String    = string;
 export type Base64UrlString = string;
+export type Base32String    = string;
 export type HexString       = string;
 
 // NOTE: these converters work only with Base Multilingual Plane (BMP)!
@@ -18,7 +19,7 @@ export class Utf16
     public static fromBase64 = (s: Base64String): Utf16String =>
         Utf16.fromUtf8(Utf8.fromBase64(s))
 
-    public static fromBase64Url = (s: Base64UrlString): Utf8String =>
+    public static fromBase64Url = (s: Base64UrlString): Utf16String =>
         Utf16.fromUtf8(Utf8.fromBase64Url(s))
 
     public static withBom   = (s: Utf16String): Utf16String => "\uFEFF" + s;
@@ -35,6 +36,9 @@ export class Utf8
 
     public static fromBase64Url = (s: Base64UrlString): Utf8String =>
         Utf8.fromBase64(Base64.fromBase64Url(s))
+
+    public static fromBytes = (bytes: Uint8Array|number[]): Utf8String =>
+        String.fromCharCode(...bytes)
 
     public static withBom = (s: Utf8String): Utf8String => "\xEF\xBB\xBF" + s;
     public static noBom = (s: Utf8String): Utf8String => s.replace(/^\xEF\xBB\xBF/, "");
@@ -54,6 +58,9 @@ export class Base64
         .replace(/-/g, "+")
         .replace(/_/g, "/")
 
+    public static fromBytes = (bytes: Uint8Array): Base64String =>
+        Base64.fromUtf8(Utf8.fromBytes(bytes))
+
     public static fromJSON = (obj: object|string) =>
         Base64.fromUtf16(JSON.stringify(obj))
 }
@@ -69,8 +76,82 @@ export class Base64Url
     public static fromUtf16 = (s: Utf16String) =>
         Base64Url.fromBase64(Base64.fromUtf16(s))
 
+    public static fromBytes = (bytes: Uint8Array): Base64UrlString =>
+        Base64Url.fromUtf8(Utf8.fromBytes(bytes))
+
     public static fromJSON = (obj: object|string) =>
         Base64Url.fromUtf16(JSON.stringify(obj))
+}
+
+export class Base32
+{
+    public static fromBytes(bytes: Uint8Array|number[]): Base32String
+    {
+        const digits = "ABCDEFGHIJKLMNOPQRSTUVWXYZ234567";
+        let v1 = 0, v2 = 0, v3 = 0, v4 = 0, v5 = 0,
+            str = '',
+            l = bytes.length,
+            i = 0;
+        const count = Math.floor(l / 5) * 5;
+        while (i < count) {
+            v1 = bytes[i++];
+            v2 = bytes[i++];
+            v3 = bytes[i++];
+            v4 = bytes[i++];
+            v5 = bytes[i++];
+            str += digits[v1 >>> 3]
+                + digits[(v1 << 2 | v2 >>> 6) & 31]
+                + digits[(v2 >>> 1) & 31]
+                + digits[(v2 << 4 | v3 >>> 4) & 31]
+                + digits[(v3 << 1 | v4 >>> 7) & 31]
+                + digits[(v4 >>> 2) & 31]
+                + digits[(v4 << 3 | v5 >>> 5) & 31]
+                + digits[v5 & 31];
+        }
+
+        // remain char
+        const remain = l - count;
+        if (remain === 0) return str;
+
+        switch (remain) {
+            // @ts-ignore no-switch-case-fall-through
+            case 4: v4 = bytes[--l];
+            // @ts-ignore no-switch-case-fall-through
+            case 3: v3 = bytes[--l];
+            // @ts-ignore no-switch-case-fall-through
+            case 2: v2 = bytes[--l];
+            // @ts-ignore no-switch-case-fall-through
+            case 1: v1 = bytes[--l];
+        }
+        str += digits[v1 >>> 3];
+
+        switch (remain) {
+            case 1: return str
+                + digits[(v1 << 2) & 31]
+                + '======';
+            case 2: return str
+                + digits[(v1 << 2 | v2 >>> 6) & 31]
+                + digits[(v2 >>> 1) & 31]
+                + digits[(v2 << 4) & 31]
+                + '====';
+            case 3: return str
+                + digits[(v1 << 2 | v2 >>> 6) & 31]
+                + digits[(v2 >>> 1) & 31]
+                + digits[(v2 << 4 | v3 >>> 4) & 31]
+                + digits[(v3 << 1) & 31]
+                + '===';
+            case 4: return str
+                + digits[(v1 << 2 | v2 >>> 6) & 31]
+                + digits[(v2 >>> 1) & 31]
+                + digits[(v2 << 4 | v3 >>> 4) & 31]
+                + digits[(v3 << 1 | v4 >>> 7) & 31]
+                + digits[(v4 >>> 2) & 31]
+                + digits[(v4 << 3) & 31]
+                + '=';
+        }
+        return str;
+    }
+
 }
 
 // export class Hex
