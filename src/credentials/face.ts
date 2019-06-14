@@ -54,10 +54,3 @@ export class FaceImage
         );
     }
 }
-
-// export class Face extends Credential
-// {
-//     constructor(samples: BioSample[]) {
-//         super(Credential.Face, samples)
-//     }
-// }

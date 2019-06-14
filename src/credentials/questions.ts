@@ -1,5 +1,3 @@
-import { Credential } from './credential';
-
 export enum QuestionType
 {
     Regular,    // number <= 100
@@ -54,33 +52,3 @@ export interface QuestionWithAnswer {
     question: Question;
     answer: Answer;
 }
-
-// export class SecurityQuestions extends Credential
-// {
-//     public constructor(data: string|object|null) {
-//         super(Credential.SecurityQuestions, data);
-//     }
-
-//     public static forAuthentication(answers: Answer[]) {
-//         return new SecurityQuestions(answers);
-//     }
-
-//     public static forEnrollment(data: QuestionWithAnswer[])
-//     {
-//         const equal = (a: QuestionWithAnswer, b: QuestionWithAnswer) =>
-//             a.question.number === b.question.number;
-//         const unique = (val: QuestionWithAnswer, idx: number, arr: QuestionWithAnswer[]) =>
-//             arr.findIndex(qa => equal(qa, val)) === idx;
-
-//         return new SecurityQuestions(data
-//             .filter(qa => qa.question.number === qa.answer.number)
-//             .filter(unique)
-//             .sort((a, b) => b.question.number - a.question.number)); // server requires reverse order
-//     }
-
-//     public static forDelete()
-//     {
-//         return new SecurityQuestions(null);
-//     }
-
-// }
