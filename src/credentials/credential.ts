@@ -1,7 +1,11 @@
 import { Base64String, Base64Url } from '../encoders';
 
+/** Alias type for a Credential ID. */
 export type CredentialId = string;
 
+/**
+ * Credential data.
+ */
 export class Credential
 {
     // true credentials
@@ -22,9 +26,13 @@ export class Credential
     // pseudo-credentials
     public static readonly Cards             : CredentialId = "FCFA704C-144B-42DB-8DF3-13F5CD20C525"; // all card types
 
+    /** Credential ID */
     public readonly id: CredentialId;
+
+    /** Base64url-encoded credential data. Format of data depends on credential type. */
     public readonly data: Base64String|null;
 
+    /** Constructs a credential. */
     public constructor(id: CredentialId, data?: string | object | null, encode: boolean = true) {
         this.id = id;
         this.data = !data       ? null
@@ -32,9 +40,12 @@ export class Credential
                   : Base64Url.fromUtf16(typeof(data) !== "string" ? JSON.stringify(data) : data);
     }
 
+    /** Constructs an empty credential object. */
     public static None(): Credential {
         return new Credential("");
     }
+
+    /** Constructs a credential object representing any credential. */
     public static Any(): Credential {
         return new Credential("*");
     }

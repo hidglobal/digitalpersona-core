@@ -1,5 +1,8 @@
 import { Base64UrlString } from "../encoders";
 
+/**
+ * Biometric factors.
+ */
 export enum BioFactor
 {
     Multiple            = 0x0001,
@@ -17,16 +20,25 @@ export enum BioFactor
     Gait                = 0x1000,
 }
 
-// Biometric owner ID registered with IBIA (http://www.ibia.org/base/cbeff/_biometric_org.phpx).
+/**
+ * Biometric owner ID registered with {@link http://www.ibia.org/base/cbeff/_biometric_org.phpx | IBIA}.
+ */
 export enum BioSampleFormatOwner
 {
     None                = 0,
-    Neurotechnologija   = 49,   // fingerprints
-    DigitalPersona      = 51,   // fingerprints
-    Cognitec            = 99,   // face
-    Innovatrics         = 53,   // face
+    /** Neurotechnologija (fingerprints). */
+    Neurotechnologija   = 49,
+    /** DigitalPersona (fingerprints) */
+    DigitalPersona      = 51,
+    /** Cognitec (face) */
+    Cognitec            = 99,
+    /** Innovatrics (face) */
+    Innovatrics         = 53,
 }
 
+/**
+ * Biometric sample format info.
+ */
 export class BioSampleFormat
 {
     constructor(
@@ -35,6 +47,9 @@ export class BioSampleFormat
     ){}
 }
 
+/**
+ * A representation type of a biometric sample.
+ */
 export enum BioSampleType
 {
     Raw                 = 0x01,   // Raw image
@@ -45,6 +60,9 @@ export enum BioSampleType
     Signed              = 0x20,
 }
 
+/**
+ * A purpose the biometric sample was intended for.
+ */
 export enum BioSamplePurpose
 {
     Any                         = 0,
@@ -56,30 +74,48 @@ export enum BioSamplePurpose
     Audit                       = 6
 }
 
+/**
+ * A biometric sample encryption type.
+ */
 export enum BioSampleEncryption
 {
     None   = 0,     // Data is not encrypted
     XTEA    = 1,    // XTEA encryption with well known key
 }
 
+/**
+ * Contains meta-information about biometric sample data.
+ */
 export class BioSampleHeader
 {
     constructor(
-        public Factor: BioFactor,               // Biometric factor. Must be set to 8 for fingerprint
-        public Format: BioSampleFormat,         // Format owner (vendor) information
-        public Type: BioSampleType,             // type of biometric sample
-        public Purpose: BioSamplePurpose,       // Purpose of biometric sample
-        public Quality: number,                 // Quality of biometric sample. If we don't support quality it should be set to -1.
-        public Encryption: BioSampleEncryption, // Encryption of biometric sample.
+        /** Biometric factor. Must be set to 8 for fingerprint. */
+        public Factor: BioFactor,
+        /** Format owner (vendor) information. */
+        public Format: BioSampleFormat,
+        /** Biometric sample representation type. */
+        public Type: BioSampleType,
+        /** Purpose of the biometric sample. */
+        public Purpose: BioSamplePurpose,
+        /** Quality of biometric sample. If we don't support quality it should be set to -1.  */
+        public Quality: number,
+        /** Encryption of biometric sample. */
+        public Encryption: BioSampleEncryption,
     ){}
 }
 
+/**
+ * A biometric sample.
+ */
 export class BioSample
 {
+    /** A version info. */
     public readonly Version = 1;
 
     constructor(
-        public readonly Header: BioSampleHeader,    // Biometric sample header
-        public readonly Data: Base64UrlString,      // Base64url encoded biometric sample data
+        /** Biometric sample header. */
+        public readonly Header: BioSampleHeader,
+        /** Base64url encoded biometric sample data */
+        public readonly Data: Base64UrlString,
     ){}
 }

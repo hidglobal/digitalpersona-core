@@ -1,25 +1,42 @@
+/**
+ * Type of a security question.
+ */
 export enum QuestionType
 {
-    Regular,    // number <= 100
-    Custom,     // number > 100
+    /** A security question from a standard predefined list of questions ({@link Question.number} <= 100). */
+    Regular,
+    /** A user-defined security question ({@link Question.number} > 100). */
+    Custom,
 }
+/**
+ * Security question data.
+ */
 export class Question
 {
-    public readonly version = 1;                    // must be set to 1
-    public readonly type: QuestionType;             // regular or custom
+    /** Version info. */
+    public readonly version = 1;
+    /** Security question type */
+    public readonly type: QuestionType;
 
+    /** Constructs a security question. */
     constructor(
-        public readonly number: number,             // question index in a regular question list
-        public readonly lang_id: number,            // language id
-        public readonly sublang_id: number,         // sublaguage id
-        public readonly keyboard_layout: number,    // Keyboard layout
-        public readonly text?: string,              // text of the question (required for CustomQuestion only)
+        /** An index of a question in a question list. */
+        public readonly number: number,
+        /** A question language ID. */
+        public readonly lang_id: number,
+        /** A question sublanguage ID. */
+        public readonly sublang_id: number,
+        /** A keyboard layout for the answer. */
+        public readonly keyboard_layout: number,
+        /** A text of the security question (only when {@link Question.type} === {@link QuestionType.Custom}) */
+        public readonly text?: string,
     ){
         this.type = number <= 100 ? QuestionType.Regular : QuestionType.Custom;
         if (this.type === QuestionType.Custom && !text)
             throw new Error("Question text is required for custom questions");
     }
 
+    /** Creates a security question from a plain JSON object. */
     public static fromJson(json: object): Question
     {
         const obj = json as Question;
@@ -31,14 +48,22 @@ export class Question
     }
 }
 
+/** A collection of security questions. */
 export type Questions = Question[];
 
+/**
+ * An answer to a security question.
+ */
 export class Answer
 {
+    /** Version info. */
     public readonly version: 1;
+    /** An index of a question in a question list. */
     public readonly number: number;
+    /** A text of the answer. Must be given in correponding {@link Question.keyboard_layout | keyboard layout}. */
     public readonly text: string;
 
+    /** Creates an answer to a security question. */
     constructor(question: Question | number, text: string)
     {
         this.text = text;
@@ -46,8 +71,10 @@ export class Answer
     }
 }
 
+/** A collection on answers to security questions. */
 export type Answers = Answer[];
 
+/** A structure associating a sequrity question with its corresponding answer. */
 export interface QuestionWithAnswer {
     question: Question;
     answer: Answer;

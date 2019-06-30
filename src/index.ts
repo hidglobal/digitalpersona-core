@@ -1,4 +1,8 @@
-/*! Copyright 2019 HID Global Inc. */
+/**
+ * DigitalPersona Core API package.
+ *
+ * Copyright 2019 HID Global Inc.
+ */
 
 export * from './http';
 export * from './biometrics';
