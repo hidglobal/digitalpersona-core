@@ -1,0 +1,4 @@
+{
+  /** Allow comments in JSON files */
+  "files.associations": { "*.json": "jsonc" }
+}

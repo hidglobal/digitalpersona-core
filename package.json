@@ -1,7 +1,7 @@
 {
   "name": "@digitalpersona/core",
   "globalObject": "dp.core",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "publishConfig": {
     "registry": "http://localhost:4873"
   },
@@ -45,7 +45,7 @@
     "test-common": "set UUT=common&& karma start",
     "local-npm": "start verdaccio",
     "api": "npx api-extractor run --local --verbose",
-    "api-doc": "npx api-documenter markdown -i ./dist/api -o ./dist/api/doc",
+    "api-doc": "tsc && npm run api && npx api-documenter markdown -i ./dist/api -o ./docs/api",
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
