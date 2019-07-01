@@ -6,6 +6,10 @@
     "registry": "http://localhost:4873"
   },
   "description": "DigitalPersona Web Access Core library",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hidglobal/digitalpersona-core"
+  },
   "author": "HID Global",
   "license": "MIT",
   "maintainers": [
@@ -49,8 +53,7 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "tslib": "^1.9.3",
-    "u2f-api": "^1.0.10"
+    "tslib": "^1.9.3"
   },
   "devDependencies": {
     "@types/jasmine": "^3.3.9",
