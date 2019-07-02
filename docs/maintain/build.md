@@ -36,7 +36,6 @@ cd ./digitalpersona-core
 yarn
 ```
 
-
 <a name="code"></a>
 ## Build code
 
@@ -69,3 +68,8 @@ npm run api-doc
 ```
 
 The build output (Markdown files) will be put into a `./docs/api/` folder.
+
+## Build pipeline overview
+
+![Build pipeline](build.svg)
+![Build pipeline](build.png)

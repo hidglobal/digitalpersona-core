@@ -16,16 +16,16 @@ import { terser } from 'rollup-plugin-terser';
 
 export default {
     input: `dist/${target}/index.js`,
-    external: [ 'u2f-api'],
+//  external: [ 'u2f-api'],
     output: {
         format,
         extend: true,
-        name: npm_package_globalObject, //'dp.accessManagement',
+        name: npm_package_globalObject,
         file: `dist/${target}.bundles/index.${format}${minify ? '.min' : ''}.js`,
         sourcemap: true,
-        globals: {
-            'u2f-api': 'u2fApi',
-        },
+        // globals: {
+        //     'u2f-api': 'u2fApi',
+        // },
     },
     plugins: [
         node(),
