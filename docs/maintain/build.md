@@ -71,5 +71,10 @@ The build output (Markdown files) will be put into a `./docs/api/` folder.
 
 ## Build pipeline overview
 
-![Build pipeline](build.svg)
-![Build pipeline](build.png)
+
+[![Build pipeline](build-pipeline.svg)](build-pipeline.dot)
+
+> NOTE: this diagram is created using Graphviz and a `build-pipeline.dot` file.
+Do not edit the SVG file directly.
+In VS Code, use [Graphviz Preview](https://marketplace.visualstudio.com/items?itemName=EFanZh.graphviz-preview)
+extension to preview DOT files and export them to SVG/PNG/PDF.
