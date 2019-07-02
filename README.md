@@ -14,4 +14,4 @@ This library provides a set of core classes and functions for the DigitalPersona
 * [Code](docs/maintain/code.md)
 * [Document](docs/maintain/document.md)
 * [Version](docs/maintain/version.md)
-* [Deploy](docs/maintain/test.md)
+* [Deploy](docs/maintain/deploy.md)
