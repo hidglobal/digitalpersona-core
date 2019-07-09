@@ -2,7 +2,7 @@
 layout: default
 title: Reference
 has_toc: false  
-parent: Usage
+parent: Use
 nav_order: 4
 ---
 
