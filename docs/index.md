@@ -5,16 +5,13 @@ has_toc: false
 nav_order: 1  
 ---
 
-###### [DigitalPersona Access Management API ](https://lenhodgeman.github.io/digitalpersona-access-management-api/)/ Web Access Core Library / Overview  
+###### [DigitalPersona Access Management API ](https://hidglobal.github.io/digitalpersona-access-management-api/)/ Web Access Core / Overview  
 
-![](docs/assets/HID-DPAM-Core.png)  
+![](assets/HID-DPAM-Core.png)  
 
 ## Overview
 
-
-This library provides a set of core classes and functions for the DigitalPersona Web Access.
-
-The DigitalPersona Web Access Core Library provides a set of core classes and functions for DigitalPersona Web Access.
+The DigitalPersona Web Access Core library provides a set of core classes and functions for DigitalPersona Web Access.
 
 See the following links for detailed documentation.
 
