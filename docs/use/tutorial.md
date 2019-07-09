@@ -1,3 +1,13 @@
+---
+layout: default
+title: Tutorial
+has_toc: false  
+parent: Usage
+nav_order: 2
+---
+
+![](../../docs/assets/HID-DPAM-Core.png)
+
 # Tutorial
 
 ## Getting started
@@ -8,7 +18,6 @@
 
 ### Bundle you project
 
-## Using Components 
+## Using Components
 
 ### Common components
-

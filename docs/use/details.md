@@ -1,3 +1,13 @@
+---
+layout: default
+title: Details
+has_toc: false
+parent: Usage
+nav_order: 1
+---
+
+![](../../docs/assets/HID-DPAM-Core.png)
+
 # Details
 
 The library provides following major parts:
