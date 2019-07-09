@@ -2,16 +2,16 @@
 
 This library provides a set of core classes and functions for the DigitalPersona Web Access.
 
-## [Usage](docs/use/index.md)
-* [Details](docs/use/details.md)
-* [Tutorial](docs/use/tutorial.md)
-* [How-to](docs/use/how-to.md)
-* [Reference](docs/use/reference.md)
+## [Usage](use/index.md)
+* [Details](use/details.md)
+* [Tutorial](use/tutorial.md)
+* [How-to](use/how-to.md)
+* [Reference](use/reference.md)
 
-## [Information for maintainers](docs/maintain/index.md)
-* [Build](docs/maintain/build.md)
-* [Test](docs/maintain/test.md)
-* [Code](docs/maintain/code.md)
-* [Document](docs/maintain/document.md)
-* [Version](docs/maintain/version.md)
-* [Deploy](docs/maintain/deploy.md)
+## [Information for maintainers](maintain/index.md)
+* [Build](maintain/build.md)
+* [Test](maintain/test.md)
+* [Code](maintain/code.md)
+* [Document](maintain/document.md)
+* [Version](maintain/version.md)
+* [Deploy](maintain/deploy.md)
