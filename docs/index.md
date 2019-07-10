@@ -7,6 +7,10 @@ nav_order: 1
 ##### [DigitalPersona Access Management API ](https://hidglobal.github.io/digitalpersona-access-management-api/)/ Web Access Core / Overview  
 ![](assets/HID-DPAM-Core.png)  
 
+### DigitalPersona Web Access Core
+#### DigitalPersona Web Access Core
+
+
 The DigitalPersona Web Access Core library
 [[@digitalpersona/core](https://www.npmjs.com/package/@digitalpersona/core)]
 is a collection of Typescript/Javascript classes and functions shared by
