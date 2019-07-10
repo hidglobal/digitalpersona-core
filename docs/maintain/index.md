@@ -7,7 +7,7 @@ permalink: /docs/maintain
 nav_order: 5
 ---
 ##### [DigitalPersona Access Management API ](https://hidglobal.github.io/digitalpersona-access-management-api/)/ Web Access Core / Library Maintenance  
-![](assets/HID-DPAM-Core.png)  
+![](../assets/HID-DPAM-Core.png)  
 ## Library Maintainance
 
 ### Recommended Tools

@@ -6,7 +6,7 @@ parent: Library Maintenance
 nav_order: 4  
 ---
 ##### [DigitalPersona Access Management API ](https://hidglobal.github.io/digitalpersona-access-management-api/)/ Web Access Core / Documenting Guidelines  
-![](assets/HID-DPAM-Core.png)  
+![](../assets/HID-DPAM-Core.png)  
 ## Documenting Guidelines
 
 All development documentation must be a part of the project source base,
