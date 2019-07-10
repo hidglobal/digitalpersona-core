@@ -1,47 +1,39 @@
----
-layout: default
-title: Overview
-has_toc: false
-nav_order: 1  
----
+# DigitalPersona Web Access core library
 
-###### [DigitalPersona Access Management API ](https://hidglobal.github.io/digitalpersona-access-management-api/)/ Web Access Core / Overview  
+DigitalPersona Web Access Core library
+[[@digitalpersona/core](https://www.npmjs.com/package/@digitalpersona/core)]
+is a collection of Typescript/Javascript classes and functions shared between other
+DigitalPersona Web Access Management APIs, such as
+[@digitalpersona/authentication](https://www.npmjs.com/package/@digitalpersona/authentication),
+[@digitalpersona/enrollment](https://www.npmjs.com/package/@digitalpersona/enrollment) and 
+[@digitalpersona/devices](https://www.npmjs.com/package/@digitalpersona/devices).
 
-![](assets/HID-DPAM-Core.png)  
+The library provides following major parts:
 
-## Overview
+* Encoders to convert data between different formats (`UTF8`, `UTF16`, `Base64`, `Base64Url`, `Base32`)
+* A base `Credential` type and derived classes for all supported credentials
+* JSON Web Token utilities and a list of supported claims
+* A `UserName` class with support of different user name types (SAM, UPN, GUID etc)
+* A `BioSample` class and supporting utilities for biometric data transfer
+* URL utilities
 
-The DigitalPersona Web Access Core library provides a set of core classes and functions for DigitalPersona Web Access.
+## Requirements
 
-See the following links for detailed documentation.
+Major browsers (Chrome, Firefox, Edge, IE11) and Node JS are supported.
+Node JS requires a shim for `atob` and `btoa` functions, for example:
 
-<table style="width:40%;">
-  <tr>
-    <th style="width:20%" ALIGN="left"><A HREF="https://hidglobal.github.io/digitalpersona-core/docs/use/index.html">Usage</A></th>
-    <th style="width:35%" ALIGN="left"><A HREF="https://hidglobal.github.io/digitalpersona-core/docs/maintain/index.html">Maintenance</A></th>
-  </tr>
-  <tr>
-  <td valign="top" ><A HREF="docs/use/details.html">Details</A></td>
-  <td><A HREF="docs/maintain/building.html">Building</A></td>
-  </tr>
-  <tr>
-    <td valign="top"><A HREF="docs/use/how-to.html.html">Tutorial</A></td>
-    <td valign="top"><A HREF="docs/maintain/testing.html">Testing</A></td>
-  </tr>
-  <tr>
-    <td valign="top"><A HREF="docs/use/reference.html">Reference</A></td>
-    <td valign="top"><A HREF="docs/maintain/coding.html">Coding</A></td>
-  </tr>
-  <tr>
-    <td valign="top"></td>
-    <td valign="top"><A HREF="docs/maintain/documenting.html">Documenting</A></td>
-  </tr>
-  <tr>
-    <td valign="top"></td>
-    <td valign="top"><A HREF="docs/maintain/version.html">Versioning</A></td>
-  </tr>  
-  <tr>
-    <td valign="top">&nbsp;</td>
-    <td valign="top"><A HREF="docs/maintain/deploy.html">Deployment</A></td>
-  </tr>
-</table>
+```js
+const base64 = require('base-64');
+global.btoa = function(s) { return base64.encode(s); }
+global.atob = function(s) { return base64.decode(s); }
+```
+
+The library uses the TypeScript as a main language.
+It is also transpiled to Javascript (ES5 and ES6 platforms are supported) for browsers  
+and distributed both in unbundled and bundled (UMD) form.
+
+## Additional documentation:
+
+* [Tutorial](./tutorial.md)
+* [How-to](./how-to.md)
+* [Reference](./reference.md)
