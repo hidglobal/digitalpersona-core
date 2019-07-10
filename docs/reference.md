@@ -1,3 +1,9 @@
+---
+layout: default
+title: Reference
+has_toc: false
+nav_order: 4  
+---
 # Reference
 
 See reference documentation [here](./../dist/api/docs/core.md).

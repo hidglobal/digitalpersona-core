@@ -1,7 +1,9 @@
 ---
 layout: default
-title: Library Maintenancce
+title: Library Maintenance
 has_toc: false
+has_children: true
+permalink: /docs/maintain
 nav_order: 5  
 ---
 # Information for library maintainers

@@ -2,22 +2,23 @@
 layout: default
 title: Overview
 has_toc: false
-nav_order: 7  
+nav_order: 1  
 ---
-##### [DigitalPersona Access Management API ](https://hidglobal.github.io/digitalpersona-access-management-api/)/ Web Access Core Library / Overview  
-![](docs/assets/HID-DPAM-svcs.png)  
+##### [DigitalPersona Access Management API ](https://hidglobal.github.io/digitalpersona-access-management-api/)/ Web Access Core / Overview  
+![](assets/HID-DPAM-Core.png)  
 
-## DigitalPersona Web Access Core Library
+## DigitalPersona Web Access Core
 
-DigitalPersona Web Access Core library
+The DigitalPersona Web Access Core library
 [[@digitalpersona/core](https://www.npmjs.com/package/@digitalpersona/core)]
 is a collection of Typescript/Javascript classes and functions shared by
-DigitalPersona Web Access Management APIs, such as
-[@digitalpersona/authentication](https://www.npmjs.com/package/@digitalpersona/authentication),
-[@digitalpersona/enrollment](https://www.npmjs.com/package/@digitalpersona/enrollment) and
-[@digitalpersona/devices](https://www.npmjs.com/package/@digitalpersona/devices).
+DigitalPersona Web Access Management APIs, such as  
 
-The library provides following major parts:
+- [@digitalpersona/authentication](https://www.npmjs.com/package/@digitalpersona/authentication)  
+- [@digitalpersona/enrollment](https://www.npmjs.com/package/@digitalpersona/enrollment)
+-[@digitalpersona/devices](https://www.npmjs.com/package/@digitalpersona/devices).
+
+The library consists of theses major parts.
 
 * Encoders to convert data between different formats (`UTF8`, `UTF16`, `Base64`, `Base64Url`, `Base32`)
 * A base `Credential` type and derived classes for all supported credentials
@@ -37,7 +38,7 @@ global.btoa = function(s) { return base64.encode(s); }
 global.atob = function(s) { return base64.decode(s); }
 ```
 
-The library uses the TypeScript as a main language.
+This library uses TypeScript as its main language.
 It is also transpiled to Javascript (ES5 and ES6 platforms are supported) for browsers  
 and distributed both in unbundled and bundled (UMD) form.
 
