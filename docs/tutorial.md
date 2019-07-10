@@ -1,8 +1,15 @@
-# Tutorial
+---
+layout: default
+title: Tutorial
+has_toc: false
+nav_order: 2
+---
 
-## Getting started
+## Tutorial
 
-### Add the package to your project
+### Getting started
+
+#### Add the package to your project
 
 Using NPM:
 ```bash
@@ -13,11 +20,10 @@ Using Yarn:
 yarn add @digitalpersona/core
 ```
 
-### Write some code
+#### Write some code
 
-### Bundle you project
+#### Bundle you project
 
-## Using Components 
+### Using Components
 
-### Common components
-
+#### Common components
