@@ -2,6 +2,7 @@
 layout: default
 title: Coding Guidelines
 has_toc: false
+Parent: Library Maintenance
 nav_order: 7  
 ---
 # Coding Guidelines
