@@ -1,4 +1,10 @@
-# Coding Guides
+---
+layout: default
+title: Coding Guidelines
+has_toc: false
+nav_order: 7  
+---
+# Coding Guidelines
 
 The library uses the TypeScript as a main language. It is transpiled to Javascript (`es5` and `es6` platforms).
 
@@ -13,13 +19,13 @@ The rules of thumb are:
 
 * If there is a modern ECMAScript API which has `es5` shims available, prefer to follow the modern standard and let
 the end user to provide a shim.
-* If there is modern ECMAScript syntax which can be transpiled to `es5` without large overhead, use the newer syntax, 
+* If there is modern ECMAScript syntax which can be transpiled to `es5` without large overhead, use the newer syntax,
   otherwise use the older equivalent.
 
 ### ES6 Async/await syntax
 
 Despite the recommendations to use `async/await` pattern everywhere, we avoid it in the main library code and prefer
-`promise().then().catch()` pattern instead. This allows us to reduce es5-transpiled code size, avoiding overhead of 
+`promise().then().catch()` pattern instead. This allows us to reduce es5-transpiled code size, avoiding overhead of
 a quite large (~1.5Kb minified) `generator/awaiter` shim inserted by TypeScript.
 
 This policy can be reviewed after support of `es5` platform is dropped.
@@ -39,9 +45,9 @@ The library uses TypeScript/ES2015 module system. You must understand what modul
 a named scope for all exports of the module, e.g: `import * as shapes from './Shapes'` or `var shapes = require('./Shapes')`.
 There is no need to create your own namespaces in the library.
 
-**Keep every module as small as possible!** It is ok to have a single export class/enum/interface per module. 
-This allows "tree-shaking" algorithms to work more effectively when the final JS bundle is created, 
-thus potentially reducing the size of the bundle. To avoid long imports you can group several modules 
+**Keep every module as small as possible!** It is ok to have a single export class/enum/interface per module.
+This allows "tree-shaking" algorithms to work more effectively when the final JS bundle is created,
+thus potentially reducing the size of the bundle. To avoid long imports you can group several modules
 in a larger super-module using a "barrel" module approach: create an `index.ts` file which re-exports
 every sub-module, and you can import the `index.ts` instead of individual sub-modules.
 

@@ -1,3 +1,9 @@
+---
+layout: default
+title: Testing
+has_toc: false
+nav_order: 11  
+---
 # Testing
 
 ## Running tests
