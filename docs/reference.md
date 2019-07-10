@@ -9,6 +9,7 @@ nav_order: 4
 
 ## Reference
 
-See reference documentation [here](./../dist/api/docs/core.md).
+See reference documentation
+<a href="https://github.com/hidglobal/digitalpersona-core/blob/master/dist/api/docs/core.md" target="_blank">here</a>.
 
 The reference documentation is generated from source code. To [re]generate documentation, follow [this guide](./maintain/build#documentation).
