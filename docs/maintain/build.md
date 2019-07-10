@@ -5,7 +5,7 @@ has_toc: false
 parent: Library Maintenance
 nav_order: 2  
 ---
-##### [DigitalPersona Access Management API ](https://hidglobal.github.io/digitalpersona-access-management-api/)/ Web Access Core / Overview  
+##### [DigitalPersona Access Management API ](https://hidglobal.github.io/digitalpersona-access-management-api/)/ Web Access Core / Making a build  
 ![](../assets/HID-DPAM-Core.png)  
 
 ## Making a build
