@@ -5,10 +5,11 @@ has_toc: false
 parent: Library Maintenance
 nav_order: 5  
 ---
+##### [DigitalPersona Access Management API ](https://hidglobal.github.io/digitalpersona-access-management-api/)/ Web Access Core / Package Versioning  
+![](assets/HID-DPAM-Core.png)  
+## Package Versioning Guidelines
 
-# Package Versioning Guidelines
-
-## Semantic Versioning
+### Semantic Versioning
 
 [Learn](https://semver.org/spec/v2.0.0.html) and follow strictly the SemVer schema:
 

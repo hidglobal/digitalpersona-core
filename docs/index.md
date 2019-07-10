@@ -7,8 +7,6 @@ nav_order: 1
 ##### [DigitalPersona Access Management API ](https://hidglobal.github.io/digitalpersona-access-management-api/)/ Web Access Core / Overview  
 ![](assets/HID-DPAM-Core.png)  
 
-## DigitalPersona Web Access Core
-
 The DigitalPersona Web Access Core library
 [[@digitalpersona/core](https://www.npmjs.com/package/@digitalpersona/core)]
 is a collection of Typescript/Javascript classes and functions shared by
@@ -18,7 +16,7 @@ DigitalPersona Web Access Management APIs, such as
 - [@digitalpersona/enrollment](https://www.npmjs.com/package/@digitalpersona/enrollment)
 -[@digitalpersona/devices](https://www.npmjs.com/package/@digitalpersona/devices).
 
-The library consists of theses major parts.
+The library consists of these major parts.
 
 * Encoders to convert data between different formats (`UTF8`, `UTF16`, `Base64`, `Base64Url`, `Base32`)
 * A base `Credential` type and derived classes for all supported credentials
@@ -39,8 +37,7 @@ global.atob = function(s) { return base64.decode(s); }
 ```
 
 This library uses TypeScript as its main language.
-It is also transpiled to Javascript (ES5 and ES6 platforms are supported) for browsers  
-and distributed both in unbundled and bundled (UMD) form.
+It is also transpiled to Javascript (ES5 and ES6 platforms are supported) for browsers and distributed both in unbundled and bundled (UMD) form.
 
 ## Additional documentation:
 
