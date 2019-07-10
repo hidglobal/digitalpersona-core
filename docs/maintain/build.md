@@ -2,7 +2,7 @@
 layout: default
 title: Making a build
 has_toc: false
-Parent: Library Maintenance
+parent: Library Maintenance
 nav_order: 2  
 ---
 # Making a build
