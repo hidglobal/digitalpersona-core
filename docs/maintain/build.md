@@ -67,7 +67,7 @@ To build API documentation run:
 npm run api-doc
 ```
 
-The build output (Markdown files) will be put into a `./docs/api/` folder.
+The build output (API report files and Markdown documents) will be put into a `./dist/api/` folder.
 
 ## Build pipeline overview
 
