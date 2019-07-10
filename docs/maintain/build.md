@@ -1,3 +1,10 @@
+---
+layout: default
+title: Making a build
+has_toc: false
+Parent: Library Maintenance
+nav_order: 2  
+---
 # Making a build
 
 <a name="toolchain"></a>

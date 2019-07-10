@@ -3,7 +3,7 @@ layout: default
 title: Documenting Guidelines
 has_toc: false
 parent: Library Maintenance
-nav_order: 10  
+nav_order: 4  
 ---
 # Documenting Guidelines
 
