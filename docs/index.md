@@ -13,8 +13,8 @@ is a collection of Typescript/Javascript classes and functions shared by
 DigitalPersona Web Access Management APIs, such as  
 
 - [@digitalpersona/authentication](https://www.npmjs.com/package/@digitalpersona/authentication)  
-- [@digitalpersona/enrollment](https://www.npmjs.com/package/@digitalpersona/enrollment)
--[@digitalpersona/devices](https://www.npmjs.com/package/@digitalpersona/devices).
+- [@digitalpersona/enrollment](https://www.npmjs.com/package/@digitalpersona/enrollment)  
+- [@digitalpersona/devices](https://www.npmjs.com/package/@digitalpersona/devices).
 
 The library consists of these major parts.
 
