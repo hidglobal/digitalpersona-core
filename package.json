@@ -2,20 +2,20 @@
   "name": "@digitalpersona/core",
   "globalObject": "dp.core",
   "version": "0.2.3",
-  "publishConfig": {
-    "registry": "http://localhost:4873"
-  },
   "description": "DigitalPersona Web Access Core library",
   "repository": {
     "type": "git",
     "url": "https://github.com/hidglobal/digitalpersona-core"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "author": "HID Global",
   "license": "MIT",
   "maintainers": [
     {
       "name": "Andrey Bronnikov",
-      "email": "andrey.bronnikov@hidgroup.com"
+      "email": "Andrey.Bronnikov@hidglobal.com"
     }
   ],
   "keywords": [
@@ -49,7 +49,7 @@
     "test-common": "set UUT=common&& karma start",
     "local-npm": "start verdaccio",
     "api": "npx api-extractor run --local --verbose",
-    "api-doc": "npx api-documenter markdown -i ./dist/api -o ./docs/api",
+    "api-doc": "npx api-documenter markdown -i ./dist/api -o ./dist/api/docs",
     "api-all": "tsc && npm run api && npm run api-doc",
     "prepublishOnly": "npm run build"
   },
