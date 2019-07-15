@@ -7,16 +7,17 @@ nav_order: 1
 ##### [DigitalPersona Access Management API ](https://hidglobal.github.io/digitalpersona-access-management-api/)/ Web Access Core / Overview  
 ![](assets/HID-DPAM-Core.png)  
 
-The DigitalPersona Web Access Core library
+{% include dpam-intro.md %}
+
+As a part of DPAM, the DigitalPersona Web Access Core library
 [[@digitalpersona/core](https://www.npmjs.com/package/@digitalpersona/core)]
-is a collection of Typescript/Javascript classes and functions shared by
-DigitalPersona Web Access Management APIs, such as  
+provides Typescript/Javascript classes and functions shared by other DPAM APIs, such as  
 
 - [@digitalpersona/authentication](https://www.npmjs.com/package/@digitalpersona/authentication)  
 - [@digitalpersona/enrollment](https://www.npmjs.com/package/@digitalpersona/enrollment)  
 - [@digitalpersona/devices](https://www.npmjs.com/package/@digitalpersona/devices).
 
-The library consists of these major parts.
+The library consists of these major parts:
 
 * Encoders to convert data between different formats (`UTF8`, `UTF16`, `Base64`, `Base64Url`, `Base32`)
 * A base `Credential` type and derived classes for all supported credentials
