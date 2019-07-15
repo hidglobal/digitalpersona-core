@@ -4,8 +4,9 @@ title: Overview
 has_toc: false
 nav_order: 1  
 ---
-##### [DigitalPersona Access Management API ](https://hidglobal.github.io/digitalpersona-access-management-api/)/ Web Access Core / Overview  
-![](assets/HID-DPAM-Core.png)  
+{% include header.html %}
+
+Core API for {{ site.data.product.name }}
 
 {% include dpam-intro.md %}
 

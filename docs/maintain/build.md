@@ -5,8 +5,7 @@ has_toc: false
 parent: Library Maintenance
 nav_order: 2  
 ---
-##### [DigitalPersona Access Management API ](https://hidglobal.github.io/digitalpersona-access-management-api/)/ Web Access Core / Making a build  
-![](../assets/HID-DPAM-Core.png)  
+{% include header.html %}
 
 ## Making a build
 
@@ -32,7 +31,7 @@ npm install -g yarn npx @microsoft/api-extractor @microsoft/api-documenter
 To clone a repository:
 
 ```
-git clone https://github.com/hidglobal/digitalpersona-core.git
+git clone {{site.data.lib.git}}/{{-site.data.lib.repo-}}.git
 ```
 
 <a name="deps"></a>
@@ -42,7 +41,7 @@ git clone https://github.com/hidglobal/digitalpersona-core.git
 To get started with the library, install dependencies first:
 
 ```
-cd ./digitalpersona-core
+cd ./{{site.data.lib.repo}}
 yarn
 ```
 

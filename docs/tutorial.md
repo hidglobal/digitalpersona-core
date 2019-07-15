@@ -4,8 +4,8 @@ title: Tutorial
 has_toc: false
 nav_order: 2
 ---
-##### [DigitalPersona Access Management API ](https://hidglobal.github.io/digitalpersona-access-management-api/)/ Web Access Core / Tutorial  
-![](assets/HID-DPAM-Core.png)  
+{% include header.html %}
+
 ## Tutorial
 
 ### Getting started
@@ -13,12 +13,15 @@ nav_order: 2
 #### Add the package to your project
 
 Using NPM:
-```bash
-npm install @digitalpersona/core -s
+
 ```
+npm install {{site.data.lib.package}}
+```
+
 Using Yarn:
-```bash
-yarn add @digitalpersona/core
+
+```
+yarn add {{site.data.lib.package}}
 ```
 
 #### Write some code

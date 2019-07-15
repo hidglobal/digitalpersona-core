@@ -5,8 +5,8 @@ has_toc: false
 parent: Library Maintenance
 nav_order: 1  
 ---
-##### [DigitalPersona Access Management API ](https://hidglobal.github.io/digitalpersona-access-management-api/)/ Web Access Core / Coding Guidelines  
-![](../assets/HID-DPAM-Core.png)  
+{% include header.html %}
+
 ## Coding Guidelines
 
 The library uses the TypeScript as a main language. It is transpiled to Javascript (`es5` and `es6` platforms).
