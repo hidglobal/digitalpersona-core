@@ -57,24 +57,27 @@
     "tslib": "^1.9.3"
   },
   "devDependencies": {
-    "@types/jasmine": "^3.3.9",
-    "@types/node": "^12.0.0",
-    "fetch-mock": "^7.3.1",
-    "jasmine": "^3.3.1",
-    "jasmine-core": "^3.3.0",
-    "karma": "^4.0.1",
-    "karma-chrome-launcher": "^2.2.0",
-    "karma-ie-launcher": "^1.0.0",
-    "karma-jasmine": "^2.0.1",
-    "karma-typescript": "^4.0.0",
-    "mkdirp": "^0.5.1",
-    "rimraf": "^2.6.3",
-    "rollup": "^1.6.0",
-    "rollup-plugin-node-resolve": "^4.0.1",
-    "rollup-plugin-terser": "^4.0.4",
-    "rollup-plugin-typescript2": "^0.21.0",
-    "terser": "^3.17.0",
-    "tslint": "^5.14.0",
-    "typescript": "^3.4.5"
+    "@types/jasmine": "^3.3",
+    "@types/node": "^12.0",
+    "fetch-mock": "^7.3",
+    "jasmine": "^3.4",
+    "jasmine-core": "^3.3",
+    "karma": "^4.0",
+    "karma-chrome-launcher": "^2.2",
+    "karma-ie-launcher": "^1.0",
+    "karma-jasmine": "^2.0",
+    "karma-typescript": "^4.0",
+    "mkdirp": "^0.5",
+    "rimraf": "^2.6",
+    "rollup": "^1.6",
+    "rollup-plugin-node-resolve": "^4.0",
+    "rollup-plugin-terser": "^4.0",
+    "rollup-plugin-typescript2": "^0.21",
+    "terser": "^3.17",
+    "tslint": "^5.14",
+    "typescript": "^3.5"
+  },
+  "resolutions": {
+    "lodash": "^4.17.13"
   }
 }
