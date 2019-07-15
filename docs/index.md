@@ -27,17 +27,17 @@ The library consists of these major parts.
 
 ## Requirements
 
-Major browsers (Chrome, Firefox, Edge, IE11) and Node JS are supported.
-Node JS requires a shim for `atob` and `btoa` functions, for example:
+{% include reqs/platforms.md %}
 
-```js
-const base64 = require('base-64');
-global.btoa = function(s) { return base64.encode(s); }
-global.atob = function(s) { return base64.decode(s); }
-```
+{% include reqs/languages.md %}
 
-This library uses TypeScript as its main language.
-It is also transpiled to Javascript (ES5 and ES6 platforms are supported) for browsers and distributed both in unbundled and bundled (UMD) form.
+### Browser support
+
+No special requirements.
+
+### Node JS support
+
+{% include shims/node-base64.md %}
 
 ## Additional documentation:
 

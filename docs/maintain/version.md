@@ -16,7 +16,7 @@ nav_order: 5
 
     Major.Minor.Patch[-Stage]
 
-* Change `Major` when braking changes are introduced.
+* Change `Major` when breaking changes are introduced.
 * Change `Minor` when new functionality is added, but backvard compatibility is preserved.
 * Change `Patch` when existing functionalty is fixed, no new functionality is added
   and backward compatibility is preserved.
