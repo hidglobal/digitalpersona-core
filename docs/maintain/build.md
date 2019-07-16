@@ -3,7 +3,7 @@ layout: default
 title: Making a build
 has_toc: false
 parent: Library Maintenance
-nav_order: 2  
+nav_order: 7  
 ---
 {% include header.html %}
 ### CORE API FOR {{ site.data.product.name }}

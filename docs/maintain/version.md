@@ -2,8 +2,7 @@
 layout: default
 title: Versioning Guidelines
 has_toc: false
-parent: Library Maintenance
-nav_order: 5  
+nav_order: 9  
 ---
 {% include header.html %}
 ### CORE API FOR {{ site.data.product.name }}
