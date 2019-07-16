@@ -32,11 +32,11 @@ The library consists of these major parts:
 
 {% include reqs/languages.md %}
 
-#### Browser support
+### Browser support
 
 No special requirements.
 
-#### Node JS support
+### Node JS support
 
 {% include shims/node-base64.md %}
 

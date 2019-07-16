@@ -6,11 +6,12 @@ parent: Library Maintenance
 nav_order: 2  
 ---
 {% include header.html %}
+### CORE API FOR {{ site.data.product.name }}
 
-## Making a build
+### Making a build
 
 <a name="toolchain"></a>
-### Prepare a toolchain
+#### Prepare a toolchain
 
 The library uses a following toolchain:
 * [Node JS](https://nodejs.org) with NPM (NodeJS Package Manager).
@@ -26,7 +27,7 @@ npm install -g yarn npx @microsoft/api-extractor @microsoft/api-documenter
 ```
 
 <a name="clone"></a>
-### Cloning a repository
+#### Cloning a repository
 
 To clone a repository:
 
@@ -35,7 +36,7 @@ git clone {{site.data.lib.git}}/{{-site.data.lib.repo-}}.git
 ```
 
 <a name="deps"></a>
-### Installing dependencies
+#### Installing dependencies
 
 
 To get started with the library, install dependencies first:
@@ -46,7 +47,7 @@ yarn
 ```
 
 <a name="code"></a>
-### Build code
+#### Build code
 
 Build the library:
 
@@ -66,7 +67,7 @@ The build output (JavaScript files) will be put into following locations, accord
 * TypeScript typings: `./dist/typings/`
 
 <a name="documentation"></a>
-### Build documentation
+#### Build documentation
 
 API documentation is built from source code comments in a TSDoc format
 using `@microsoft/api-extractor` and `@microsoft/api-documenter`.
@@ -78,8 +79,7 @@ npm run api-doc
 
 The build output (API report files and Markdown documents) will be put into a `./dist/api/` folder.
 
-### Build pipeline overview
-
+#### Build pipeline overview
 
 [![Build pipeline](build-pipeline.svg)](build-pipeline.dot)
 

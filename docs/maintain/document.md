@@ -6,8 +6,9 @@ parent: Library Maintenance
 nav_order: 4  
 ---
 {% include header.html %}
+### CORE API FOR {{ site.data.product.name }}
 
-## Documenting Guidelines
+### Documenting Guidelines
 
 All development documentation must be a part of the project source base,
 so they are

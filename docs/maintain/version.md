@@ -6,10 +6,11 @@ parent: Library Maintenance
 nav_order: 5  
 ---
 {% include header.html %}
+### CORE API FOR {{ site.data.product.name }}
 
-## Package Versioning Guidelines
+### Package Versioning Guidelines
 
-### Semantic Versioning
+#### Semantic Versioning
 
 [Learn](https://semver.org/spec/v2.0.0.html) and follow strictly the SemVer schema:
 

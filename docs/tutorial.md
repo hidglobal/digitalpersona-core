@@ -5,12 +5,13 @@ has_toc: false
 nav_order: 2
 ---
 {% include header.html %}
+### CORE API FOR {{ site.data.product.name }}
 
-## Tutorial
+### Tutorial
 
-### Getting started
+#### Getting started
 
-#### Add the package to your project
+##### Add the package to your project
 
 Using NPM:
 
@@ -24,10 +25,10 @@ Using Yarn:
 yarn add {{site.data.lib.package}}
 ```
 
-#### Write some code
+##### Write some code
 
-#### Bundle you project
+##### Bundle your project
 
-### Using Components
+#### Using Components
 
-#### Common components
+##### Common components
