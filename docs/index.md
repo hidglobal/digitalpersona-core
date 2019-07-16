@@ -4,9 +4,8 @@ title: Overview
 has_toc: false
 nav_order: 1  
 ---
-{% include header.html %}
-
-Core API for {{ site.data.product.name }}
+{% include header.html %}  
+##### Core API for {{ site.data.product.name }}
 
 {% include dpam-intro.md %}
 
