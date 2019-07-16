@@ -1,8 +1,8 @@
 ---
 layout: default
-title: \- Making a build
+title: Making a build
 has_toc: false
-nav_order: 7
+nav_exclude: true
 ---
 
 {% include header.html %}

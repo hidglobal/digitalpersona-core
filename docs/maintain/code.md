@@ -1,8 +1,8 @@
 ---
 layout: default
-title: \- Coding Guidelines
+title: Coding Guidelines
 has_toc: false
-nav_order: 6
+nav_exclude: true
 ---
 
 {% include header.html %}

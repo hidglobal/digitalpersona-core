@@ -1,8 +1,8 @@
 ---
 layout: default
-title: \- Versioning Guidelines
+title: Versioning Guidelines
 has_toc: false
-nav_order: 10
+nav_exclude: true
 ---
 {% include header.html %}
 ### CORE API FOR {{ site.data.product.name }}
