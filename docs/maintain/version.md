@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Versioning Guidelines
+title: \- Versioning Guidelines
 has_toc: false
 nav_order: 10
 ---

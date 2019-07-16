@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Documenting Guidelines
+title: \- Documenting Guidelines
 has_toc: false
 nav_order: 9
 ---

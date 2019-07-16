@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Coding Guidelines
+title: \- Coding Guidelines
 has_toc: false
 nav_order: 6
 ---

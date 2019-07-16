@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Testing
+title: \- Testing
 has_toc: false
 nav_order: 8
 ---
