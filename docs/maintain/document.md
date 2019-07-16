@@ -2,7 +2,7 @@
 layout: default
 title: Documenting Guidelines
 has_toc: false
-nav_order: 8  
+nav_order: 9
 ---
 {% include header.html %}
 ### CORE API FOR {{ site.data.product.name }}

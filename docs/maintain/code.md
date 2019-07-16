@@ -2,9 +2,9 @@
 layout: default
 title: Coding Guidelines
 has_toc: false
-parent: Library Maintenance
-nav_order: 6  
+nav_order: 6
 ---
+
 {% include header.html %}
 ### CORE API FOR {{ site.data.product.name }}
 

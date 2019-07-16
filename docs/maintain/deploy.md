@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Deployment
+title: - Deployment
 has_toc: false
-nav_order: 10  
+nav_order: 11
 ---
 {% include header.html %}
 ### CORE API FOR {{ site.data.product.name }}

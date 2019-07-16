@@ -2,9 +2,9 @@
 layout: default
 title: Testing
 has_toc: false
-parent: Library Maintenance
-nav_order: 8  
+nav_order: 8
 ---
+
 {% include header.html %}
 ### CORE API FOR {{ site.data.product.name }}
 

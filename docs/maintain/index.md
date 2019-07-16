@@ -2,8 +2,6 @@
 layout: default
 title: Library Maintenance
 has_toc: false
-has_children: true
-permalink: /docs/maintain
 nav_order: 5
 ---
 {% include header.html %}
