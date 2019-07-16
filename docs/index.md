@@ -5,7 +5,7 @@ has_toc: false
 nav_order: 1  
 ---
 {% include header.html %}  
-#### CORE API FOR {{ site.data.product.name }}
+### CORE API FOR {{ site.data.product.name }}
 
 {% include dpam-intro.md %}
 
@@ -26,22 +26,23 @@ The library consists of these major parts:
 * A `BioSample` class and supporting utilities for biometric data transfer
 * URL utilities
 
-## Requirements
+### Requirements
 
 {% include reqs/platforms.md %}
 
 {% include reqs/languages.md %}
 
-### Browser support
+#### Browser support
 
 No special requirements.
 
-### Node JS support
+#### Node JS support
 
 {% include shims/node-base64.md %}
 
-## Additional documentation:
+### Additional documentation:
 
 * [Tutorial](./tutorial.md)
 * [How-to](./how-to.md)
 * [Reference](./reference.md)
+* [Library Maintenance](./maintain/index.md)
