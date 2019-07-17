@@ -16,7 +16,7 @@ The library may be used in mobile apps, so it is **critically important** to kee
 
 ## ECMAScript standards and APIs
 
-The library attempts to follow the most modern ECMAScript standards, but support for the `es5` platform put incurs some restrictions.
+The library attempts to follow the most modern ECMAScript standards, but support for the `es5` platform incurs some restrictions.
 
 Rules of thumb are:
 
