@@ -6,10 +6,10 @@ nav_exclude: true
 ---
 {% include header.html %}
 
-### Making a build
+# Making a build
 
 <a name="toolchain"></a>
-#### Prepare a toolchain
+## Preparing a toolchain
 
 The library uses the following toolchain:
 
@@ -26,7 +26,7 @@ npm install -g yarn npx @microsoft/api-extractor @microsoft/api-documenter
 ```
 
 <a name="clone"></a>
-#### Cloning a repository
+## Cloning a repository
 
 To clone a repository:
 
@@ -35,7 +35,7 @@ git clone {{site.data.lib.git}}/{{-site.data.lib.repo-}}.git
 ```
 
 <a name="deps"></a>
-#### Installing dependencies
+## Installing dependencies
 
 To get started with the library, install dependencies first:
 
@@ -45,7 +45,7 @@ yarn
 ```
 
 <a name="code"></a>
-#### Build code
+## Building the code
 
 Build the library:
 
@@ -65,7 +65,7 @@ The build output (JavaScript files) will be put into the following locations, ac
 * TypeScript typings: `./dist/typings/`
 
 <a name="documentation"></a>
-#### Build documentation
+## Building the documentation
 
 API documentation is built from source code comments in a TSDoc format
 using `@microsoft/api-extractor` and `@microsoft/api-documenter`.
@@ -77,12 +77,12 @@ npm run api-doc
 
 The build output (API report files and Markdown documents) will be put into the `./dist/api/` folder.
 
-#### Build pipeline overview
-<BR>
+## Build pipeline overview
 
 [![Build pipeline](build-pipeline.svg)](build-pipeline.dot)
 
-> NOTE: this diagram is created using Graphviz and a `build-pipeline.dot` file.
+<small>NOTE: this diagram is created using Graphviz and a `build-pipeline.dot` file.
 Do not edit the SVG file directly.
 In VS Code, use the [Graphviz Preview](https://marketplace.visualstudio.com/items?itemName=EFanZh.graphviz-preview)
 extension to preview DOT files and export them to SVG/PNG/PDF.
+</small>

@@ -6,6 +6,6 @@ nav_exclude: true
 ---
 {% include header.html %}
 
-### Deployment
+# Deployment
 
-#### NPM
+## NPM

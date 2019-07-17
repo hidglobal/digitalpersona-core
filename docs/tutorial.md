@@ -6,11 +6,11 @@ nav_order: 2
 ---
 {% include header.html %}
 
-### Tutorial
+# Tutorial
 
-#### Getting started
+## Getting started
 
-##### Add the package to your project
+### Add the package to your project
 
 Using NPM:
 
@@ -24,10 +24,10 @@ Using Yarn:
 yarn add {{site.data.lib.package}}
 ```
 
-##### Write some code
+### Write some code
 
-##### Bundle your project
+### Bundle your project
 
-#### Using Components
+## Using Components
 
-##### Common components
+### Common components

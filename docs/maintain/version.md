@@ -6,9 +6,9 @@ nav_exclude: true
 ---
 {% include header.html %}
 
-### Package Versioning Guidelines
+# Package Versioning Guidelines
 
-#### Semantic Versioning
+## Semantic Versioning
 
 [Learn](https://semver.org/spec/v2.0.0.html) and follow strictly the SemVer schema:
 

@@ -6,7 +6,7 @@ nav_exclude: true
 ---
 {% include header.html %}
 
-### Documenting Guidelines
+# Documenting Guidelines
 
 All development documentation must be a part of the project source base so that they:
 - are immediately accessible to developers cloning the repository, i.e. not requiring external document hosting on platforms such as Confluence.
