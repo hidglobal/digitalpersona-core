@@ -1,6 +1,7 @@
-name: DigitalPersona Web Access Core
-shortName: DPAM Core
+name: DigitalPersona Web Access Core API
+shortName: Core API
 git: 'https://github.com/hidglobal'
 repo: digitalpersona-core
 package: '@digitalpersona/core'
+npm: 'https://www.npmjs.com/package/@digitalpersona/core'
 api: core

@@ -5,13 +5,15 @@ has_toc: false
 nav_order: 1  
 ---
 {% include header.html %}  
-### CORE API FOR {{ site.data.product.name }}
+
+# Overview
 
 {% include dpam-intro.md %}
 
-As a part of DPAM, the DigitalPersona Web Access Core library
-[[@digitalpersona/core](https://www.npmjs.com/package/@digitalpersona/core)]
-provides Typescript/Javascript classes and functions shared by other DPAM APIs, such as  
+As a part of {{ site.data.product.shortName }}, the {{ site.data.lib.name }} library
+[[{{ site.data.lib.package }}]({{ site.data.lib.npm }})]
+provides Typescript/Javascript classes and functions shared by other
+{{ site.data.product.shortName }} APIs, such as
 
 - [@digitalpersona/authentication](https://www.npmjs.com/package/@digitalpersona/authentication)  
 - [@digitalpersona/enrollment](https://www.npmjs.com/package/@digitalpersona/enrollment)  
@@ -26,7 +28,7 @@ The library consists of these major parts:
 * A `BioSample` class and supporting utilities for biometric data transfer
 * URL utilities
 
-### Requirements
+## Requirements
 
 {% include reqs/platforms.md %}
 
@@ -40,7 +42,7 @@ No special requirements.
 
 {% include shims/node-base64.md %}
 
-### Additional documentation:
+## Additional documentation:
 
 * [Tutorial](./tutorial.md)
 * [How-to](./how-to.md)

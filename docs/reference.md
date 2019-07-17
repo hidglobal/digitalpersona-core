@@ -5,7 +5,6 @@ has_toc: false
 nav_order: 4  
 ---
 {% include header.html %}
-### CORE API FOR {{ site.data.product.name }}
 
 ### Reference
 
