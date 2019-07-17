@@ -1,3 +1,6 @@
 name: DigitalPersona Access Management
 shortName: DPAM
 repo: digitalpersona-access-management-api
+git: 'https://github.com/hidglobal'
+npm: 'https://www.npmjs.com/package'
+
