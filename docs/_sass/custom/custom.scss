@@ -29,7 +29,7 @@ $mono-font-family: Lucida Console, monospace;
         font-size: 1em !important;
     }
     h5 {
-        font-size: 0.63em !important;
+        font-size: 0.83em !important;
         text-transform: uppercase !important;
     }
     h6 {
@@ -39,9 +39,10 @@ $mono-font-family: Lucida Console, monospace;
 
     code {
         font-family: Lucida Console, monospace;
+        font-size: 14px;
     }
     .highlight code {
-        line-height: 1.2;
+        line-height: 1.1 !important;
     }
 
     .breadcrumb-nav-list {
