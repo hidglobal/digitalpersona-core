@@ -1,6 +1,6 @@
-$root-font-size: 14px;         // Base font-size for rems
-$body-line-height: 1.4;
-$body-heading-line-height: 1.15;
+// $root-font-size: 14px;         // Base font-size for rems
+// $body-line-height: 1.4;
+// $body-heading-line-height: 1.15;
 $mono-font-family: Lucida Console, monospace;
 
 .nowrap {
@@ -12,6 +12,10 @@ $mono-font-family: Lucida Console, monospace;
 }
 
 .page-content {
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: bold;
+        text-transform: none;
+    }
     h1 {
         font-size: $root-font-size * 2.0 !important;
     }
@@ -23,8 +27,14 @@ $mono-font-family: Lucida Console, monospace;
     }
     h4 {
         font-size: $root-font-size * 1.4 !important;
+        text-transform: uppercase;
     }
     h6 {
         font-size: $root-font-size !important;
+        text-transform: uppercase;
+    }
+
+    .breadcrumb-nav-list {
+        padding-left: 0;
     }
 }
