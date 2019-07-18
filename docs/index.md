@@ -5,8 +5,9 @@ has_toc: false
 nav_order: 1  
 ---
 {% include header.html %}  
+<BR>  
 
-# Overview 3
+# Overview 4
 {% include dpam-intro.md %}
 
 As a part of {{ site.data.product.shortName }}, the {{ site.data.lib.name }} library
@@ -47,13 +48,3 @@ No special requirements.
 * [How-to](./how-to.md)
 * [Reference](./reference.md)
 * [Library Maintenance](./maintain/index.md)
-
-# Heading One
-## Heading Two
-### Heading Three
-#### Heading Four
-This is some text
-##### Heading Five
-This is some text
-###### Heading Six
-This is some text
