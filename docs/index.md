@@ -42,7 +42,7 @@ No special requirements.
 
 {% include shims/node-base64.md %}
 
-## Additional documentation:
+## Additional documentation
 
 * [Tutorial](./tutorial.md)
 * [How-to](./how-to.md)
