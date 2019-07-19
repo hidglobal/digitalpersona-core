@@ -10,13 +10,13 @@ nav_exclude: true
 
 All development documentation must be a part of the project source base so that they:
 - are immediately accessible to developers cloning the repository, i.e. not requiring external document hosting on platforms such as Confluence.
-- have full history tracking
+- have full history tracking.
 - can easily be referred to and linked from other web pages via the TFS web interface.
 
 The preferrable format for the documentation is Markdown.
 - It is an enriched text format, so developers can easily see diffs in Git.
 - It remains readable in any text viewer, even those lacking specific Markdown support.
-- It integrates well with the TFS web interface. The `Readme.md` file is a default documentation enry point in TFS repositories and automatically displays when TFS  repos are opened in a web browser.
+- It integrates well with the TFS web interface. The `Readme.md` file is a default documentation enry point in TFS repositories and automatically displays when TFS repos are opened in a web browser.
 
 To learn more about the Markdown syntax, refer to these links.
 
