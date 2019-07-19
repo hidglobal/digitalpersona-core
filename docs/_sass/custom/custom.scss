@@ -17,24 +17,30 @@ $mono-font-family: Lucida Console, monospace;
     }
     h1 {
         font-size: 2em !important;
-        border-bottom: 1px solid #DEDEDE;
+        line-height: 50% !important;
+        border-bottom: 1px solid #DEDEDE !important;
     }
     h2 {
         font-size: 1.8em !important;
+        line-height: 25% !important;
     }
     h3 {
         font-size: 1.6em !important;
+        line-height: 15% !important;
     }
     h4 {
         font-size: 1.4em !important;
+        line-height: 12% !important;
         text-transform: uppercase !important;
     }
     h5 {
         font-size: 1.2em !important;
+        line-height: 10% !important;
         font-weight: bold;
     }
     h6 {
         font-size: 1em !important;
+        line-height: 10% !important;
         font-weight: bold;
         font-style: italic;
     }
