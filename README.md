@@ -1,11 +1,3 @@
----
-layout: default
-title: Overview
-nav_exclude: true
----
-{% include header.html %}  
-<BR>  
-
 # Overview
 The DigitalPersona Web Access Core library
 [[@digitalpersona/core](https://www.npmjs.com/package/@digitalpersona/core)]
