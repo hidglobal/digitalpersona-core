@@ -9,5 +9,5 @@ Strips a Byte-Order-Mark (BOM) from the UTF16 string.
 <b>Signature:</b>
 
 ```typescript
-static noBom: (s: string) => string;
+static noBom: (s: Utf16String) => Utf16String;
 ```

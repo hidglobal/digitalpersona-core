@@ -4,10 +4,12 @@
 
 ## HexString type
 
-Alias type for Hex-encoded strings.
+Branded alias type for Hex-encoded strings.
 
 <b>Signature:</b>
 
 ```typescript
-export declare type HexString = string;
+export declare type HexString = string & {
+    encoding?: "hex";
+};
 ```

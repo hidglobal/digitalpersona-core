@@ -9,5 +9,5 @@ Converts a UTF8 string to a UTF16 string.
 <b>Signature:</b>
 
 ```typescript
-static fromUtf8: (s: string) => string;
+static fromUtf8: (s: Utf8String) => Utf16String;
 ```

@@ -1,10 +1,22 @@
-import { Utf16, Utf8, Base64, Base64Url, Base32 } from './encoders';
+import { Utf16, Utf8, Base64, Base64Url, Base32, } from './encoders';
 describe('Encodings: ', () => {
+    // Differently-branded strings must be incompatible to each other, but must be compatible with regular strings.
+    // From regular strings to branded strings
     const utf16 = "test \u0442\u0435\u0441\u0442 \u6D4B\u8BD5 \u30C6\u30B9\u30C8 \u2611\u263A";
     const utf8 = "test ÑÐµÑÑ æµè¯ ãã¹ã ââº";
     const base64 = "dGVzdCDRgtC10YHRgiDmtYvor5Ug44OG44K544OIIOKYkeKYug==";
     const base64url = "dGVzdCDRgtC10YHRgiDmtYvor5Ug44OG44K544OIIOKYkeKYug";
     // const hex = "00740065007300740020044204350441044200206d4b8bd5002030c630b930c800202611263a";
+    // From branded strings to regular strings
+    const compatibleWithUtf8 = utf8;
+    const compatibleWithUtf16 = utf16;
+    const compatibleWithBase64 = base64;
+    const compatibleWithBase64Url = base64url;
+    // Between different branded strings -- must produce a compilation error if uncommented!
+    // const mustBeNotAssignable: Utf8String = utf16;
+    // const mustBeNotAssignable: Utf16String = utf8;
+    // const mustBeNotAssignable: Base64String = base64url;
+    // const mustBeNotAssignable: Base64UrlString = base64;
     describe('Utf8', () => {
         it('must convert from Utf16', () => {
             expect(Utf8.fromUtf16(utf16)).toBe(utf8);

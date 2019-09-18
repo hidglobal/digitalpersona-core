@@ -9,5 +9,5 @@ Converts a Base64url-encoded string to a Base64-encoded string.
 <b>Signature:</b>
 
 ```typescript
-static fromBase64Url: (s: string) => string;
+static fromBase64Url: (s: Base64UrlString) => Base64String;
 ```

@@ -4,10 +4,12 @@
 
 ## Utf16String type
 
-Alias type for UTF16 strings.
+Branded alias type for UTF16-encoded strings.
 
 <b>Signature:</b>
 
 ```typescript
-export declare type Utf16String = string;
+export declare type Utf16String = string & {
+    encoding?: "utf16";
+};
 ```

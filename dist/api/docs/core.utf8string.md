@@ -4,10 +4,12 @@
 
 ## Utf8String type
 
-Alias type for UTF8 strings.
+Branded alias type for UTF8-encoded strings.
 
 <b>Signature:</b>
 
 ```typescript
-export declare type Utf8String = string;
+export declare type Utf8String = string & {
+    encoding?: "utf8";
+};
 ```

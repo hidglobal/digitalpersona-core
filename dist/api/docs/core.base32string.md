@@ -4,10 +4,12 @@
 
 ## Base32String type
 
-Alias type for Base32-encoded strings.
+Branded alias type for Base32-encoded strings.
 
 <b>Signature:</b>
 
 ```typescript
-export declare type Base32String = string;
+export declare type Base32String = string & {
+    encoding?: "base32";
+};
 ```

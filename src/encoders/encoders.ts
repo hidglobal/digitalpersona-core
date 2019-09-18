@@ -5,23 +5,29 @@
  * and we do not try to restore genuine UTF32 codepoint from surrogates during conversion.
  */
 
-/** Alias type for UTF16 strings. */
-export type Utf16String     = string;
+/** Branded alias type for UTF16-encoded strings. */
+export type Utf16String     = string
+                            & { encoding?: "utf16" };
 
-/** Alias type for UTF8 strings. */
-export type Utf8String      = string;
+/** Branded alias type for UTF8-encoded strings. */
+export type Utf8String      = string
+                            & { encoding?: "utf8" };
 
-/** Alias type for Base64-encoded strings. */
-export type Base64String    = string;
+/** Branded alias type for Base64-encoded strings. */
+export type Base64String    = string
+                            & { encoding?: "base64" };
 
-/** Alias type for Base64Url-encoded strings. */
-export type Base64UrlString = string;
+/** Branded alias type for Base64Url-encoded strings. */
+export type Base64UrlString = string
+                            & { encoding?: "base64url" };
 
-/** Alias type for Base32-encoded strings. */
-export type Base32String    = string;
+/** Branded alias type for Base32-encoded strings. */
+export type Base32String    = string
+                            & { encoding?: "base32" };
 
-/** Alias type for Hex-encoded strings. */
-export type HexString       = string;
+/** Branded alias type for Hex-encoded strings. */
+export type HexString       = string
+                            & { encoding?: "hex" };
 
 /**
  * Set of converters to UTF16.

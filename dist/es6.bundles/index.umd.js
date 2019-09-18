@@ -639,12 +639,6 @@
         }
     }
 
-    /**
-     * DigitalPersona Core API package.
-     *
-     * Copyright 2019 HID Global Inc.
-     */
-
     exports.Answer = Answer;
     exports.Base32 = Base32;
     exports.Base64 = Base64;

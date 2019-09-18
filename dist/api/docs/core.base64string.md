@@ -4,10 +4,12 @@
 
 ## Base64String type
 
-Alias type for Base64-encoded strings.
+Branded alias type for Base64-encoded strings.
 
 <b>Signature:</b>
 
 ```typescript
-export declare type Base64String = string;
+export declare type Base64String = string & {
+    encoding?: "base64";
+};
 ```

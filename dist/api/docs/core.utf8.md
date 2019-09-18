@@ -16,10 +16,10 @@ export declare class Utf8
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [fromBase64](./core.utf8.frombase64.md) | <code>static</code> | <code>(s: string) =&gt; string</code> | Decodes a Base64-encoded string to a UTF8 string. |
-|  [fromBase64Url](./core.utf8.frombase64url.md) | <code>static</code> | <code>(s: string) =&gt; string</code> | Decodes a Base64url-encoded string to a UTF8 string. |
-|  [fromBytes](./core.utf8.frombytes.md) | <code>static</code> | <code>(bytes: number[] &#124; Uint8Array) =&gt; string</code> | Converts a byte array to a UTF16 string. |
-|  [fromUtf16](./core.utf8.fromutf16.md) | <code>static</code> | <code>(s: string) =&gt; string</code> | Converts a UTF16 string to a UTF16 string. |
-|  [noBom](./core.utf8.nobom.md) | <code>static</code> | <code>(s: string) =&gt; string</code> | Strips a Byte-Order-Mark (BOM) from the UTF8 string. |
-|  [withBom](./core.utf8.withbom.md) | <code>static</code> | <code>(s: string) =&gt; string</code> | Appends Byte-Order-Mark (BOM) to the UTF8 string. |
+|  [fromBase64](./core.utf8.frombase64.md) | <code>static</code> | <code>(s: Base64String) =&gt; Utf8String</code> | Decodes a Base64-encoded string to a UTF8 string. |
+|  [fromBase64Url](./core.utf8.frombase64url.md) | <code>static</code> | <code>(s: Base64UrlString) =&gt; Utf8String</code> | Decodes a Base64url-encoded string to a UTF8 string. |
+|  [fromBytes](./core.utf8.frombytes.md) | <code>static</code> | <code>(bytes: number[] &#124; Uint8Array) =&gt; Utf8String</code> | Converts a byte array to a UTF16 string. |
+|  [fromUtf16](./core.utf8.fromutf16.md) | <code>static</code> | <code>(s: Utf16String) =&gt; Utf8String</code> | Converts a UTF16 string to a UTF16 string. |
+|  [noBom](./core.utf8.nobom.md) | <code>static</code> | <code>(s: Utf8String) =&gt; Utf8String</code> | Strips a Byte-Order-Mark (BOM) from the UTF8 string. |
+|  [withBom](./core.utf8.withbom.md) | <code>static</code> | <code>(s: Utf8String) =&gt; Utf8String</code> | Appends Byte-Order-Mark (BOM) to the UTF8 string. |
 

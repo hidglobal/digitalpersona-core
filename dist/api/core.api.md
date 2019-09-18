@@ -21,31 +21,37 @@ export class Base32 {
 }
 
 // @public
-export type Base32String = string;
+export type Base32String = string & {
+    encoding?: "base32";
+};
 
 // @public
 export class Base64 {
-    static fromBase64Url: (s: string) => string;
-    static fromBytes: (bytes: Uint8Array) => string;
-    static fromJSON: (obj: string | object) => string;
-    static fromUtf16: (s: string) => string;
-    static fromUtf8: (s: string) => string;
+    static fromBase64Url: (s: Base64UrlString) => Base64String;
+    static fromBytes: (bytes: Uint8Array) => Base64String;
+    static fromJSON: (obj: string | object) => Base64String;
+    static fromUtf16: (s: Utf16String) => Base64String;
+    static fromUtf8: (s: Utf8String) => Base64String;
 }
 
 // @public
-export type Base64String = string;
+export type Base64String = string & {
+    encoding?: "base64";
+};
 
 // @public
 export class Base64Url {
-    static fromBase64: (s: string) => string;
-    static fromBytes: (bytes: Uint8Array) => string;
-    static fromJSON: (obj: string | object) => string;
-    static fromUtf16: (s: string) => string;
-    static fromUtf8: (s: string) => string;
+    static fromBase64: (s: Base64String) => Base64UrlString;
+    static fromBytes: (bytes: Uint8Array) => Base64UrlString;
+    static fromJSON: (obj: string | object) => Base64UrlString;
+    static fromUtf16: (s: Utf16String) => Base64UrlString;
+    static fromUtf8: (s: Utf8String) => Base64UrlString;
 }
 
 // @public
-export type Base64UrlString = string;
+export type Base64UrlString = string & {
+    encoding?: "base64url";
+};
 
 // @public
 export enum BioFactor {
@@ -328,7 +334,9 @@ export enum FingerPosition {
 export type Fingers = Finger[];
 
 // @public
-export type HexString = string;
+export type HexString = string & {
+    encoding?: "hex";
+};
 
 // @public
 export type JSONWebToken = string;
@@ -418,28 +426,32 @@ export enum UserNameType {
 
 // @public
 export class Utf16 {
-    static fromBase64: (s: string) => string;
-    static fromBase64Url: (s: string) => string;
-    static fromUtf8: (s: string) => string;
-    static noBom: (s: string) => string;
-    static withBom: (s: string) => string;
+    static fromBase64: (s: Base64String) => Utf16String;
+    static fromBase64Url: (s: Base64UrlString) => Utf16String;
+    static fromUtf8: (s: Utf8String) => Utf16String;
+    static noBom: (s: Utf16String) => Utf16String;
+    static withBom: (s: Utf16String) => Utf16String;
 }
 
 // @public
-export type Utf16String = string;
+export type Utf16String = string & {
+    encoding?: "utf16";
+};
 
 // @public
 export class Utf8 {
-    static fromBase64: (s: string) => string;
-    static fromBase64Url: (s: string) => string;
-    static fromBytes: (bytes: number[] | Uint8Array) => string;
-    static fromUtf16: (s: string) => string;
-    static noBom: (s: string) => string;
-    static withBom: (s: string) => string;
+    static fromBase64: (s: Base64String) => Utf8String;
+    static fromBase64Url: (s: Base64UrlString) => Utf8String;
+    static fromBytes: (bytes: number[] | Uint8Array) => Utf8String;
+    static fromUtf16: (s: Utf16String) => Utf8String;
+    static noBom: (s: Utf8String) => Utf8String;
+    static withBom: (s: Utf8String) => Utf8String;
 }
 
 // @public
-export type Utf8String = string;
+export type Utf8String = string & {
+    encoding?: "utf8";
+};
 
 
 // (No @packageDocumentation comment for this package)

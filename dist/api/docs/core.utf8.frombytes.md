@@ -9,5 +9,5 @@ Converts a byte array to a UTF16 string.
 <b>Signature:</b>
 
 ```typescript
-static fromBytes: (bytes: number[] | Uint8Array) => string;
+static fromBytes: (bytes: number[] | Uint8Array) => Utf8String;
 ```

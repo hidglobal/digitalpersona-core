@@ -16,9 +16,9 @@ export declare class Utf16
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [fromBase64](./core.utf16.frombase64.md) | <code>static</code> | <code>(s: string) =&gt; string</code> | Decodes a Base64-encoded string to a UTF16 string. |
-|  [fromBase64Url](./core.utf16.frombase64url.md) | <code>static</code> | <code>(s: string) =&gt; string</code> | Decodes a Base64url-encoded string to a UTF16 string. |
-|  [fromUtf8](./core.utf16.fromutf8.md) | <code>static</code> | <code>(s: string) =&gt; string</code> | Converts a UTF8 string to a UTF16 string. |
-|  [noBom](./core.utf16.nobom.md) | <code>static</code> | <code>(s: string) =&gt; string</code> | Strips a Byte-Order-Mark (BOM) from the UTF16 string. |
-|  [withBom](./core.utf16.withbom.md) | <code>static</code> | <code>(s: string) =&gt; string</code> | Appends Byte-Order-Mark (BOM) to the UTF16 string. |
+|  [fromBase64](./core.utf16.frombase64.md) | <code>static</code> | <code>(s: Base64String) =&gt; Utf16String</code> | Decodes a Base64-encoded string to a UTF16 string. |
+|  [fromBase64Url](./core.utf16.frombase64url.md) | <code>static</code> | <code>(s: Base64UrlString) =&gt; Utf16String</code> | Decodes a Base64url-encoded string to a UTF16 string. |
+|  [fromUtf8](./core.utf16.fromutf8.md) | <code>static</code> | <code>(s: Utf8String) =&gt; Utf16String</code> | Converts a UTF8 string to a UTF16 string. |
+|  [noBom](./core.utf16.nobom.md) | <code>static</code> | <code>(s: Utf16String) =&gt; Utf16String</code> | Strips a Byte-Order-Mark (BOM) from the UTF16 string. |
+|  [withBom](./core.utf16.withbom.md) | <code>static</code> | <code>(s: Utf16String) =&gt; Utf16String</code> | Appends Byte-Order-Mark (BOM) to the UTF16 string. |
 

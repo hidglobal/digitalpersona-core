@@ -697,7 +697,6 @@
         FaceImage.prototype.toBioSample = function (format, purpose, sdkVersion) {
             if (format === void 0) { format = new BioSampleFormat(exports.BioSampleFormatOwner.None, 0); }
             if (purpose === void 0) { purpose = exports.BioSamplePurpose.Any; }
-            if (sdkVersion === void 0) { sdkVersion = 0x30100; }
             return new BioSample(new BioSampleHeader(exports.BioFactor.FacialFeatures, format, exports.BioSampleType.Raw, purpose, -1, exports.BioSampleEncryption.None), Base64Url.fromJSON(this));
         };
         return FaceImage;
@@ -757,12 +756,6 @@
         }
         return Answer;
     }());
-
-    /**
-     * DigitalPersona Core API package.
-     *
-     * Copyright 2019 HID Global Inc.
-     */
 
     exports.Answer = Answer;
     exports.Base32 = Base32;

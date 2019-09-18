@@ -9,5 +9,5 @@ Encodes a plain JSON object or a string to a Base64-encoded string.
 <b>Signature:</b>
 
 ```typescript
-static fromJSON: (obj: string | object) => string;
+static fromJSON: (obj: string | object) => Base64String;
 ```

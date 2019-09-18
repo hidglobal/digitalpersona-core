@@ -9,5 +9,5 @@ Converts a byte array to a Base64url-encoded string.
 <b>Signature:</b>
 
 ```typescript
-static fromBytes: (bytes: Uint8Array) => string;
+static fromBytes: (bytes: Uint8Array) => Base64UrlString;
 ```

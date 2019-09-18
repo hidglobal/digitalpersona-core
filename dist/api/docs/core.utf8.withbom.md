@@ -9,5 +9,5 @@ Appends Byte-Order-Mark (BOM) to the UTF8 string.
 <b>Signature:</b>
 
 ```typescript
-static withBom: (s: string) => string;
+static withBom: (s: Utf8String) => Utf8String;
 ```

@@ -342,7 +342,19 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ": string) => string"
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Base64UrlString"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Base64String"
                 },
                 {
                   "kind": "Content",
@@ -353,7 +365,7 @@
               "name": "fromBase64Url",
               "propertyTypeTokenRange": {
                 "startIndex": 3,
-                "endIndex": 6
+                "endIndex": 9
               },
               "isStatic": true
             },
@@ -392,7 +404,11 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ") => string"
+                  "text": ") => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Base64String"
                 },
                 {
                   "kind": "Content",
@@ -403,7 +419,7 @@
               "name": "fromBytes",
               "propertyTypeTokenRange": {
                 "startIndex": 3,
-                "endIndex": 8
+                "endIndex": 9
               },
               "isStatic": true
             },
@@ -434,7 +450,11 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ": string | object) => string"
+                  "text": ": string | object) => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Base64String"
                 },
                 {
                   "kind": "Content",
@@ -445,7 +465,7 @@
               "name": "fromJSON",
               "propertyTypeTokenRange": {
                 "startIndex": 3,
-                "endIndex": 6
+                "endIndex": 7
               },
               "isStatic": true
             },
@@ -476,7 +496,19 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ": string) => string"
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Utf16String"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Base64String"
                 },
                 {
                   "kind": "Content",
@@ -487,7 +519,7 @@
               "name": "fromUtf16",
               "propertyTypeTokenRange": {
                 "startIndex": 3,
-                "endIndex": 6
+                "endIndex": 9
               },
               "isStatic": true
             },
@@ -518,7 +550,19 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ": string) => string"
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Utf8String"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Base64String"
                 },
                 {
                   "kind": "Content",
@@ -529,7 +573,7 @@
               "name": "fromUtf8",
               "propertyTypeTokenRange": {
                 "startIndex": 3,
-                "endIndex": 6
+                "endIndex": 9
               },
               "isStatic": true
             }
@@ -584,7 +628,19 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ": string) => string"
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Base64String"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Base64UrlString"
                 },
                 {
                   "kind": "Content",
@@ -595,7 +651,7 @@
               "name": "fromBase64",
               "propertyTypeTokenRange": {
                 "startIndex": 3,
-                "endIndex": 6
+                "endIndex": 9
               },
               "isStatic": true
             },
@@ -634,7 +690,11 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ") => string"
+                  "text": ") => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Base64UrlString"
                 },
                 {
                   "kind": "Content",
@@ -645,7 +705,7 @@
               "name": "fromBytes",
               "propertyTypeTokenRange": {
                 "startIndex": 3,
-                "endIndex": 8
+                "endIndex": 9
               },
               "isStatic": true
             },
@@ -676,7 +736,11 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ": string | object) => string"
+                  "text": ": string | object) => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Base64UrlString"
                 },
                 {
                   "kind": "Content",
@@ -687,7 +751,7 @@
               "name": "fromJSON",
               "propertyTypeTokenRange": {
                 "startIndex": 3,
-                "endIndex": 6
+                "endIndex": 7
               },
               "isStatic": true
             },
@@ -718,7 +782,19 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ": string) => string"
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Utf16String"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Base64UrlString"
                 },
                 {
                   "kind": "Content",
@@ -729,7 +805,7 @@
               "name": "fromUtf16",
               "propertyTypeTokenRange": {
                 "startIndex": 3,
-                "endIndex": 6
+                "endIndex": 9
               },
               "isStatic": true
             },
@@ -760,7 +836,19 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ": string) => string"
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Utf8String"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Base64UrlString"
                 },
                 {
                   "kind": "Content",
@@ -771,7 +859,7 @@
               "name": "fromUtf8",
               "propertyTypeTokenRange": {
                 "startIndex": 3,
-                "endIndex": 6
+                "endIndex": 9
               },
               "isStatic": true
             }
@@ -6897,7 +6985,19 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ": string) => string"
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Base64String"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Utf16String"
                 },
                 {
                   "kind": "Content",
@@ -6908,7 +7008,7 @@
               "name": "fromBase64",
               "propertyTypeTokenRange": {
                 "startIndex": 3,
-                "endIndex": 6
+                "endIndex": 9
               },
               "isStatic": true
             },
@@ -6939,7 +7039,19 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ": string) => string"
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Base64UrlString"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Utf16String"
                 },
                 {
                   "kind": "Content",
@@ -6950,7 +7062,7 @@
               "name": "fromBase64Url",
               "propertyTypeTokenRange": {
                 "startIndex": 3,
-                "endIndex": 6
+                "endIndex": 9
               },
               "isStatic": true
             },
@@ -6981,7 +7093,19 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ": string) => string"
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Utf8String"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Utf16String"
                 },
                 {
                   "kind": "Content",
@@ -6992,7 +7116,7 @@
               "name": "fromUtf8",
               "propertyTypeTokenRange": {
                 "startIndex": 3,
-                "endIndex": 6
+                "endIndex": 9
               },
               "isStatic": true
             },
@@ -7023,7 +7147,19 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ": string) => string"
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Utf16String"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Utf16String"
                 },
                 {
                   "kind": "Content",
@@ -7034,7 +7170,7 @@
               "name": "noBom",
               "propertyTypeTokenRange": {
                 "startIndex": 3,
-                "endIndex": 6
+                "endIndex": 9
               },
               "isStatic": true
             },
@@ -7065,7 +7201,19 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ": string) => string"
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Utf16String"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Utf16String"
                 },
                 {
                   "kind": "Content",
@@ -7076,7 +7224,7 @@
               "name": "withBom",
               "propertyTypeTokenRange": {
                 "startIndex": 3,
-                "endIndex": 6
+                "endIndex": 9
               },
               "isStatic": true
             }
@@ -7131,7 +7279,19 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ": string) => string"
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Base64String"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Utf8String"
                 },
                 {
                   "kind": "Content",
@@ -7142,7 +7302,7 @@
               "name": "fromBase64",
               "propertyTypeTokenRange": {
                 "startIndex": 3,
-                "endIndex": 6
+                "endIndex": 9
               },
               "isStatic": true
             },
@@ -7173,7 +7333,19 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ": string) => string"
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Base64UrlString"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Utf8String"
                 },
                 {
                   "kind": "Content",
@@ -7184,7 +7356,7 @@
               "name": "fromBase64Url",
               "propertyTypeTokenRange": {
                 "startIndex": 3,
-                "endIndex": 6
+                "endIndex": 9
               },
               "isStatic": true
             },
@@ -7223,7 +7395,11 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ") => string"
+                  "text": ") => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Utf8String"
                 },
                 {
                   "kind": "Content",
@@ -7234,7 +7410,7 @@
               "name": "fromBytes",
               "propertyTypeTokenRange": {
                 "startIndex": 3,
-                "endIndex": 8
+                "endIndex": 9
               },
               "isStatic": true
             },
@@ -7265,7 +7441,19 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ": string) => string"
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Utf16String"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Utf8String"
                 },
                 {
                   "kind": "Content",
@@ -7276,7 +7464,7 @@
               "name": "fromUtf16",
               "propertyTypeTokenRange": {
                 "startIndex": 3,
-                "endIndex": 6
+                "endIndex": 9
               },
               "isStatic": true
             },
@@ -7307,7 +7495,19 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ": string) => string"
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Utf8String"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Utf8String"
                 },
                 {
                   "kind": "Content",
@@ -7318,7 +7518,7 @@
               "name": "noBom",
               "propertyTypeTokenRange": {
                 "startIndex": 3,
-                "endIndex": 6
+                "endIndex": 9
               },
               "isStatic": true
             },
@@ -7349,7 +7549,19 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ": string) => string"
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Utf8String"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Utf8String"
                 },
                 {
                   "kind": "Content",
@@ -7360,7 +7572,7 @@
               "name": "withBom",
               "propertyTypeTokenRange": {
                 "startIndex": 3,
-                "endIndex": 6
+                "endIndex": 9
               },
               "isStatic": true
             }
@@ -7407,7 +7619,7 @@
         {
           "kind": "TypeAlias",
           "canonicalReference": "Base32String",
-          "docComment": "/**\n * Alias type for Base32-encoded strings.\n */\n",
+          "docComment": "/**\n * Branded alias type for Base32-encoded strings.\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -7423,7 +7635,15 @@
             },
             {
               "kind": "Content",
-              "text": "string"
+              "text": "string & {\n    "
+            },
+            {
+              "kind": "Reference",
+              "text": "encoding"
+            },
+            {
+              "kind": "Content",
+              "text": "?: \"base32\";\n}"
             },
             {
               "kind": "Content",
@@ -7434,13 +7654,13 @@
           "name": "Base32String",
           "typeTokenRange": {
             "startIndex": 3,
-            "endIndex": 4
+            "endIndex": 6
           }
         },
         {
           "kind": "TypeAlias",
           "canonicalReference": "Base64String",
-          "docComment": "/**\n * Alias type for Base64-encoded strings.\n */\n",
+          "docComment": "/**\n * Branded alias type for Base64-encoded strings.\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -7456,7 +7676,15 @@
             },
             {
               "kind": "Content",
-              "text": "string"
+              "text": "string & {\n    "
+            },
+            {
+              "kind": "Reference",
+              "text": "encoding"
+            },
+            {
+              "kind": "Content",
+              "text": "?: \"base64\";\n}"
             },
             {
               "kind": "Content",
@@ -7467,13 +7695,13 @@
           "name": "Base64String",
           "typeTokenRange": {
             "startIndex": 3,
-            "endIndex": 4
+            "endIndex": 6
           }
         },
         {
           "kind": "TypeAlias",
           "canonicalReference": "Base64UrlString",
-          "docComment": "/**\n * Alias type for Base64Url-encoded strings.\n */\n",
+          "docComment": "/**\n * Branded alias type for Base64Url-encoded strings.\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -7489,7 +7717,15 @@
             },
             {
               "kind": "Content",
-              "text": "string"
+              "text": "string & {\n    "
+            },
+            {
+              "kind": "Reference",
+              "text": "encoding"
+            },
+            {
+              "kind": "Content",
+              "text": "?: \"base64url\";\n}"
             },
             {
               "kind": "Content",
@@ -7500,7 +7736,7 @@
           "name": "Base64UrlString",
           "typeTokenRange": {
             "startIndex": 3,
-            "endIndex": 4
+            "endIndex": 6
           }
         },
         {
@@ -7665,7 +7901,7 @@
         {
           "kind": "TypeAlias",
           "canonicalReference": "HexString",
-          "docComment": "/**\n * Alias type for Hex-encoded strings.\n */\n",
+          "docComment": "/**\n * Branded alias type for Hex-encoded strings.\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -7681,7 +7917,15 @@
             },
             {
               "kind": "Content",
-              "text": "string"
+              "text": "string & {\n    "
+            },
+            {
+              "kind": "Reference",
+              "text": "encoding"
+            },
+            {
+              "kind": "Content",
+              "text": "?: \"hex\";\n}"
             },
             {
               "kind": "Content",
@@ -7692,7 +7936,7 @@
           "name": "HexString",
           "typeTokenRange": {
             "startIndex": 3,
-            "endIndex": 4
+            "endIndex": 6
           }
         },
         {
@@ -7768,7 +8012,7 @@
         {
           "kind": "TypeAlias",
           "canonicalReference": "Utf16String",
-          "docComment": "/**\n * Alias type for UTF16 strings.\n */\n",
+          "docComment": "/**\n * Branded alias type for UTF16-encoded strings.\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -7784,7 +8028,15 @@
             },
             {
               "kind": "Content",
-              "text": "string"
+              "text": "string & {\n    "
+            },
+            {
+              "kind": "Reference",
+              "text": "encoding"
+            },
+            {
+              "kind": "Content",
+              "text": "?: \"utf16\";\n}"
             },
             {
               "kind": "Content",
@@ -7795,13 +8047,13 @@
           "name": "Utf16String",
           "typeTokenRange": {
             "startIndex": 3,
-            "endIndex": 4
+            "endIndex": 6
           }
         },
         {
           "kind": "TypeAlias",
           "canonicalReference": "Utf8String",
-          "docComment": "/**\n * Alias type for UTF8 strings.\n */\n",
+          "docComment": "/**\n * Branded alias type for UTF8-encoded strings.\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -7817,7 +8069,15 @@
             },
             {
               "kind": "Content",
-              "text": "string"
+              "text": "string & {\n    "
+            },
+            {
+              "kind": "Reference",
+              "text": "encoding"
+            },
+            {
+              "kind": "Content",
+              "text": "?: \"utf8\";\n}"
             },
             {
               "kind": "Content",
@@ -7828,7 +8088,7 @@
           "name": "Utf8String",
           "typeTokenRange": {
             "startIndex": 3,
-            "endIndex": 4
+            "endIndex": 6
           }
         }
       ]

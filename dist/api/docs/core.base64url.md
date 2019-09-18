@@ -16,9 +16,9 @@ export declare class Base64Url
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [fromBase64](./core.base64url.frombase64.md) | <code>static</code> | <code>(s: string) =&gt; string</code> | Converts a Base64-encoded string to a Base64url-encoded string. |
-|  [fromBytes](./core.base64url.frombytes.md) | <code>static</code> | <code>(bytes: Uint8Array) =&gt; string</code> | Converts a byte array to a Base64url-encoded string. |
-|  [fromJSON](./core.base64url.fromjson.md) | <code>static</code> | <code>(obj: string &#124; object) =&gt; string</code> | Encodes a plain JSON object or a string to a Base64url-encoded string. |
-|  [fromUtf16](./core.base64url.fromutf16.md) | <code>static</code> | <code>(s: string) =&gt; string</code> | Converts a UTF16 string to a Base64url-encoded string. |
-|  [fromUtf8](./core.base64url.fromutf8.md) | <code>static</code> | <code>(s: string) =&gt; string</code> | Converts a UTF8 string to a Base64url-encoded string. |
+|  [fromBase64](./core.base64url.frombase64.md) | <code>static</code> | <code>(s: Base64String) =&gt; Base64UrlString</code> | Converts a Base64-encoded string to a Base64url-encoded string. |
+|  [fromBytes](./core.base64url.frombytes.md) | <code>static</code> | <code>(bytes: Uint8Array) =&gt; Base64UrlString</code> | Converts a byte array to a Base64url-encoded string. |
+|  [fromJSON](./core.base64url.fromjson.md) | <code>static</code> | <code>(obj: string &#124; object) =&gt; Base64UrlString</code> | Encodes a plain JSON object or a string to a Base64url-encoded string. |
+|  [fromUtf16](./core.base64url.fromutf16.md) | <code>static</code> | <code>(s: Utf16String) =&gt; Base64UrlString</code> | Converts a UTF16 string to a Base64url-encoded string. |
+|  [fromUtf8](./core.base64url.fromutf8.md) | <code>static</code> | <code>(s: Utf8String) =&gt; Base64UrlString</code> | Converts a UTF8 string to a Base64url-encoded string. |
 

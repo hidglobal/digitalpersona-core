@@ -1,7 +1,7 @@
 {
   "name": "@digitalpersona/core",
   "globalObject": "dp.core",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "DigitalPersona Web Access Core library",
   "repository": {
     "type": "git",
@@ -33,7 +33,7 @@
   "typings": "./dist/typings/index.d.ts",
   "scripts": {
     "clean": "rimraf ./dist",
-    "build": "npm run clean && npm run tsc-all && npm run rollup",
+    "build": "npm run clean && npm run tsc-all && npm run rollup && npm run api && npm run api-doc",
     "tsc": "tsc",
     "tsc-es5": "tsc --p ./build/tsconfig/tsconfig.es5.json",
     "tsc-es6": "tsc --p ./build/tsconfig/tsconfig.es6.json",

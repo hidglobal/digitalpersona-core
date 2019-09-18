@@ -9,5 +9,5 @@ Encodes a UTF16 string to a Base64-encoded string.
 <b>Signature:</b>
 
 ```typescript
-static fromUtf16: (s: string) => string;
+static fromUtf16: (s: Utf16String) => Base64String;
 ```
