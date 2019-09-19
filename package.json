@@ -1,7 +1,7 @@
 {
   "name": "@digitalpersona/core",
   "globalObject": "dp.core",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "DigitalPersona Web Access Core library",
   "repository": {
     "type": "git",
