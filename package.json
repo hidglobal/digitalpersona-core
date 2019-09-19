@@ -51,7 +51,7 @@
     "api": "npx api-extractor run --local --verbose",
     "api-doc": "npx api-documenter markdown -i ./dist/api -o ./dist/api/docs",
     "api-all": "tsc && npm run api && npm run api-doc",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build && npm run test-once"
   },
   "dependencies": {
     "tslib": "^1.9.3"
