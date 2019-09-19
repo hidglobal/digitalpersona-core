@@ -4,10 +4,13 @@
 
 ## CredentialId type
 
-Alias type for a Credential ID.
+Branded alias type for credential identifier strings.
 
 <b>Signature:</b>
 
 ```typescript
-export declare type CredentialId = string;
+export declare type CredentialId = string & {
+    brand?: "dp.core.Credential";
+    encoding?: "guid";
+};
 ```

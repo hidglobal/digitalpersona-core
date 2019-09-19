@@ -9,5 +9,5 @@ An index of a question in a question list.
 <b>Signature:</b>
 
 ```typescript
-readonly number: number;
+readonly number: QuestionNumber;
 ```

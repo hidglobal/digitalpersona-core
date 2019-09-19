@@ -58,10 +58,11 @@
 |  [Base64String](./core.base64string.md) | Branded alias type for Base64-encoded strings. |
 |  [Base64UrlString](./core.base64urlstring.md) | Branded alias type for Base64Url-encoded strings. |
 |  [ClaimNames](./core.claimnames.md) | Alias type representing all claim names, as if <code>type ClaimNames = &quot;jti&quot; &#124; &quot;iss&quot; &#124; &quot;iat&quot; &#124; &quot;aud&quot; &#124; ... &#124; &quot;wan&quot; &#124; &quot;t24&quot;;</code> |
-|  [CredentialId](./core.credentialid.md) | Alias type for a Credential ID. |
+|  [CredentialId](./core.credentialid.md) | Branded alias type for credential identifier strings. |
 |  [Fingers](./core.fingers.md) | Collection of finger enrollment data. |
 |  [HexString](./core.hexstring.md) | Branded alias type for Hex-encoded strings. |
-|  [JSONWebToken](./core.jsonwebtoken.md) | Alias type for a string representing a JSON Web Token. |
+|  [JSONWebToken](./core.jsonwebtoken.md) | Branded alias type for a string representing a JSON Web Token. |
+|  [QuestionNumber](./core.questionnumber.md) |  |
 |  [Questions](./core.questions.md) | A collection of security questions. |
 |  [Utf16String](./core.utf16string.md) | Branded alias type for UTF16-encoded strings. |
 |  [Utf8String](./core.utf8string.md) | Branded alias type for UTF8-encoded strings. |

@@ -9,13 +9,13 @@ Creates an answer to a security question.
 <b>Signature:</b>
 
 ```typescript
-constructor(question: Question | number, text: string);
+constructor(question: Question | QuestionNumber, text: string);
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  question | <code>Question &#124; number</code> |  |
+|  question | <code>Question &#124; QuestionNumber</code> |  |
 |  text | <code>string</code> |  |
 

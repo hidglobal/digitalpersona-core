@@ -1,7 +1,8 @@
 import { Base64String, Base64Url } from '../encoders';
 
-/** Alias type for a Credential ID. */
-export type CredentialId = string;
+/** Branded alias type for credential identifier strings. */
+export type CredentialId = string
+                         & { brand?: "dp.core.Credential", encoding?: "guid" };
 
 /**
  * Credential data.

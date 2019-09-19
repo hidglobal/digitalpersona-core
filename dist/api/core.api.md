@@ -6,8 +6,8 @@
 
 // @public
 export class Answer {
-    constructor(question: Question | number, text: string);
-    readonly number: number;
+    constructor(question: Question | QuestionNumber, text: string);
+    readonly number: QuestionNumber;
     readonly text: string;
     readonly version: 1;
 }
@@ -269,7 +269,10 @@ export class Credential {
 }
 
 // @public
-export type CredentialId = string;
+export type CredentialId = string & {
+    brand?: "dp.core.Credential";
+    encoding?: "guid";
+};
 
 // @public
 export interface CredentialUsed {
@@ -339,7 +342,9 @@ export type HexString = string & {
 };
 
 // @public
-export type JSONWebToken = string;
+export type JSONWebToken = string & {
+    encoding?: "jwt";
+};
 
 // @public
 export class JWT {
@@ -350,7 +355,7 @@ export class JWT {
 // @public
 export class Question {
     constructor(
-    number: number, 
+    number: QuestionNumber, 
     lang_id: number, 
     sublang_id: number, 
     keyboard_layout: number, 
@@ -358,12 +363,19 @@ export class Question {
     static fromJson(json: object): Question;
     readonly keyboard_layout: number;
     readonly lang_id: number;
-    readonly number: number;
+    readonly number: QuestionNumber;
     readonly sublang_id: number;
     readonly text?: string | undefined;
     readonly type: QuestionType;
     readonly version = 1;
 }
+
+// @public (undocumented)
+export type QuestionNumber = number & {
+    brand?: "dp.core.Question";
+    min?: 0;
+    max?: 103;
+};
 
 // @public
 export type Questions = Question[];

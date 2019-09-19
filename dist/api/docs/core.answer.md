@@ -22,7 +22,7 @@ export declare class Answer
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [number](./core.answer.number.md) |  | <code>number</code> | An index of a question in a question list. |
+|  [number](./core.answer.number.md) |  | <code>QuestionNumber</code> | An index of a question in a question list. |
 |  [text](./core.answer.text.md) |  | <code>string</code> | A text of the answer. Must be given in correponding [keyboard layout](./core.question.keyboard_layout.md)<!-- -->. |
 |  [version](./core.answer.version.md) |  | <code>1</code> | Version info. |
 

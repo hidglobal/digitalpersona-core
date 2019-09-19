@@ -8,6 +8,9 @@ export enum QuestionType
     /** A user-defined security question ({@link Question.number} > 100). */
     Custom,
 }
+
+export type QuestionNumber  = number
+                            & { brand?: "dp.core.Question", min?: 0, max?: 103 };
 /**
  * Security question data.
  */
@@ -21,7 +24,7 @@ export class Question
     /** Constructs a security question. */
     constructor(
         /** An index of a question in a question list. */
-        public readonly number: number,
+        public readonly number: QuestionNumber,
         /** A question language ID. */
         public readonly lang_id: number,
         /** A question sublanguage ID. */
@@ -59,12 +62,12 @@ export class Answer
     /** Version info. */
     public readonly version: 1;
     /** An index of a question in a question list. */
-    public readonly number: number;
+    public readonly number: QuestionNumber;
     /** A text of the answer. Must be given in correponding {@link Question.keyboard_layout | keyboard layout}. */
     public readonly text: string;
 
     /** Creates an answer to a security question. */
-    constructor(question: Question | number, text: string)
+    constructor(question: Question | QuestionNumber, text: string)
     {
         this.text = text;
         this.number = (question instanceof Question) ? question.number : question;

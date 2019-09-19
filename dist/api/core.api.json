@@ -59,7 +59,11 @@
                 },
                 {
                   "kind": "Content",
-                  "text": " | number"
+                  "text": " | "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "QuestionNumber"
                 },
                 {
                   "kind": "Content",
@@ -89,14 +93,14 @@
                   "parameterName": "question",
                   "parameterTypeTokenRange": {
                     "startIndex": 3,
-                    "endIndex": 5
+                    "endIndex": 6
                   }
                 },
                 {
                   "parameterName": "text",
                   "parameterTypeTokenRange": {
-                    "startIndex": 8,
-                    "endIndex": 9
+                    "startIndex": 9,
+                    "endIndex": 10
                   }
                 }
               ]
@@ -119,8 +123,8 @@
                   "text": ": "
                 },
                 {
-                  "kind": "Content",
-                  "text": "number"
+                  "kind": "Reference",
+                  "text": "QuestionNumber"
                 },
                 {
                   "kind": "Content",
@@ -5352,8 +5356,8 @@
                   "text": ": "
                 },
                 {
-                  "kind": "Content",
-                  "text": "number"
+                  "kind": "Reference",
+                  "text": "QuestionNumber"
                 },
                 {
                   "kind": "Content",
@@ -5610,8 +5614,8 @@
                   "text": ": "
                 },
                 {
-                  "kind": "Content",
-                  "text": "number"
+                  "kind": "Reference",
+                  "text": "QuestionNumber"
                 },
                 {
                   "kind": "Content",
@@ -7831,7 +7835,7 @@
         {
           "kind": "TypeAlias",
           "canonicalReference": "CredentialId",
-          "docComment": "/**\n * Alias type for a Credential ID.\n */\n",
+          "docComment": "/**\n * Branded alias type for credential identifier strings.\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -7847,7 +7851,23 @@
             },
             {
               "kind": "Content",
-              "text": "string"
+              "text": "string & {\n    "
+            },
+            {
+              "kind": "Reference",
+              "text": "brand"
+            },
+            {
+              "kind": "Content",
+              "text": "?: \"dp.core.Credential\";\n    "
+            },
+            {
+              "kind": "Reference",
+              "text": "encoding"
+            },
+            {
+              "kind": "Content",
+              "text": "?: \"guid\";\n}"
             },
             {
               "kind": "Content",
@@ -7858,7 +7878,7 @@
           "name": "CredentialId",
           "typeTokenRange": {
             "startIndex": 3,
-            "endIndex": 4
+            "endIndex": 8
           }
         },
         {
@@ -7942,7 +7962,7 @@
         {
           "kind": "TypeAlias",
           "canonicalReference": "JSONWebToken",
-          "docComment": "/**\n * Alias type for a string representing a JSON Web Token.\n */\n",
+          "docComment": "/**\n * Branded alias type for a string representing a JSON Web Token.\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -7958,7 +7978,15 @@
             },
             {
               "kind": "Content",
-              "text": "string"
+              "text": "string & {\n    "
+            },
+            {
+              "kind": "Reference",
+              "text": "encoding"
+            },
+            {
+              "kind": "Content",
+              "text": "?: \"jwt\";\n}"
             },
             {
               "kind": "Content",
@@ -7969,7 +7997,64 @@
           "name": "JSONWebToken",
           "typeTokenRange": {
             "startIndex": 3,
-            "endIndex": 4
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "QuestionNumber",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type "
+            },
+            {
+              "kind": "Reference",
+              "text": "QuestionNumber"
+            },
+            {
+              "kind": "Content",
+              "text": " = "
+            },
+            {
+              "kind": "Content",
+              "text": "number & {\n    "
+            },
+            {
+              "kind": "Reference",
+              "text": "brand"
+            },
+            {
+              "kind": "Content",
+              "text": "?: \"dp.core.Question\";\n    "
+            },
+            {
+              "kind": "Reference",
+              "text": "min"
+            },
+            {
+              "kind": "Content",
+              "text": "?: 0;\n    "
+            },
+            {
+              "kind": "Reference",
+              "text": "max"
+            },
+            {
+              "kind": "Content",
+              "text": "?: 103;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "QuestionNumber",
+          "typeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 10
           }
         },
         {

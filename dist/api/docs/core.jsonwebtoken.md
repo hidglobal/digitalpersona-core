@@ -4,10 +4,12 @@
 
 ## JSONWebToken type
 
-Alias type for a string representing a JSON Web Token.
+Branded alias type for a string representing a JSON Web Token.
 
 <b>Signature:</b>
 
 ```typescript
-export declare type JSONWebToken = string;
+export declare type JSONWebToken = string & {
+    encoding?: "jwt";
+};
 ```

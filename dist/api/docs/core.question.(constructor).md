@@ -10,7 +10,7 @@ Constructs a security question.
 
 ```typescript
 constructor(
-    number: number, 
+    number: QuestionNumber, 
     lang_id: number, 
     sublang_id: number, 
     keyboard_layout: number, 
@@ -21,7 +21,7 @@ constructor(
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  number | <code>number</code> |  |
+|  number | <code>QuestionNumber</code> |  |
 |  lang\_id | <code>number</code> |  |
 |  sublang\_id | <code>number</code> |  |
 |  keyboard\_layout | <code>number</code> |  |

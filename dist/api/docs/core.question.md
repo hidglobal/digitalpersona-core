@@ -24,7 +24,7 @@ export declare class Question
 |  --- | --- | --- | --- |
 |  [keyboard\_layout](./core.question.keyboard_layout.md) |  | <code>number</code> | A keyboard layout for the answer. |
 |  [lang\_id](./core.question.lang_id.md) |  | <code>number</code> | A question language ID. |
-|  [number](./core.question.number.md) |  | <code>number</code> | An index of a question in a question list. |
+|  [number](./core.question.number.md) |  | <code>QuestionNumber</code> | An index of a question in a question list. |
 |  [sublang\_id](./core.question.sublang_id.md) |  | <code>number</code> | A question sublanguage ID. |
 |  [text](./core.question.text.md) |  | <code>string &#124; undefined</code> | A text of the security question (only when  === [QuestionType.Custom](./core.questiontype.custom.md)<!-- -->) |
 |  [type](./core.question.type.md) |  | <code>QuestionType</code> | Security question type |
