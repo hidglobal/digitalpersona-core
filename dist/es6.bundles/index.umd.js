@@ -409,7 +409,7 @@
             if (header.cty === "JWT") {
                 // we have a nested JWT with encrypted payload (JWE).
                 // Encrypted nested JWT may replicate some claims in the header to be publicly accessible.
-                return Object.assign({}, header, new JWTHeader());
+                return Object.assign(Object.assign({}, header), new JWTHeader());
             }
             else {
                 // unencrypted payload, use claims from the payload only

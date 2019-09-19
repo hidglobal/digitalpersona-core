@@ -1,5 +1,5 @@
 // tslint:disable: ban-types
-import * as tslib_1 from "tslib";
+import { __read, __spread } from "tslib";
 /**
  * Set of converters to UTF16.
  */
@@ -45,7 +45,7 @@ var Utf8 = /** @class */ (function () {
     };
     /** Converts a byte array to a UTF16 string. */
     Utf8.fromBytes = function (bytes) {
-        return String.fromCharCode.apply(String, tslib_1.__spread(bytes));
+        return String.fromCharCode.apply(String, __spread(bytes));
     };
     /** Appends Byte-Order-Mark (BOM) to the UTF8 string. */
     Utf8.withBom = function (s) { return "\xEF\xBB\xBF" + s; };

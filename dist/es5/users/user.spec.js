@@ -1,4 +1,4 @@
-import * as tslib_1 from "tslib";
+import { __values } from "tslib";
 import { User } from "./user";
 import { UserNameType } from "./userNameType";
 describe("User", function () {
@@ -12,7 +12,7 @@ describe("User", function () {
             "u_s-e.r@company.com",
         ];
         try {
-            for (var validNames_1 = tslib_1.__values(validNames), validNames_1_1 = validNames_1.next(); !validNames_1_1.done; validNames_1_1 = validNames_1.next()) {
+            for (var validNames_1 = __values(validNames), validNames_1_1 = validNames_1.next(); !validNames_1_1.done; validNames_1_1 = validNames_1.next()) {
                 var name_1 = validNames_1_1.value;
                 var user = new User(name_1);
                 expect(user.name).toBe(name_1);
@@ -37,7 +37,7 @@ describe("User", function () {
             "company.com\\user-name",
         ];
         try {
-            for (var validNames_2 = tslib_1.__values(validNames), validNames_2_1 = validNames_2.next(); !validNames_2_1.done; validNames_2_1 = validNames_2.next()) {
+            for (var validNames_2 = __values(validNames), validNames_2_1 = validNames_2.next(); !validNames_2_1.done; validNames_2_1 = validNames_2.next()) {
                 var name_2 = validNames_2_1.value;
                 var user = new User(name_2);
                 expect(user.name).toBe(name_2);
@@ -63,7 +63,7 @@ describe("User", function () {
             "user/name",
         ];
         try {
-            for (var validNames_3 = tslib_1.__values(validNames), validNames_3_1 = validNames_3.next(); !validNames_3_1.done; validNames_3_1 = validNames_3.next()) {
+            for (var validNames_3 = __values(validNames), validNames_3_1 = validNames_3.next(); !validNames_3_1.done; validNames_3_1 = validNames_3.next()) {
                 var name_3 = validNames_3_1.value;
                 var user = new User(name_3);
                 expect(user.name).toBe(name_3);
@@ -86,7 +86,7 @@ describe("User", function () {
             "6DE5B5ED-85FC-4298-A18B-DAC7D5A18369",
         ];
         try {
-            for (var validNames_4 = tslib_1.__values(validNames), validNames_4_1 = validNames_4.next(); !validNames_4_1.done; validNames_4_1 = validNames_4.next()) {
+            for (var validNames_4 = __values(validNames), validNames_4_1 = validNames_4.next(); !validNames_4_1.done; validNames_4_1 = validNames_4.next()) {
                 var name_4 = validNames_4_1.value;
                 var user = new User(name_4);
                 expect(user.name).toBe(name_4);

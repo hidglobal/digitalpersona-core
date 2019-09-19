@@ -1,4 +1,4 @@
-import * as tslib_1 from "tslib";
+import { __assign } from "tslib";
 import { Utf16 } from '../encoders';
 import { User } from '../users';
 /** Represents a JSON Web Token Header. */
@@ -28,7 +28,7 @@ var JWT = /** @class */ (function () {
         if (header.cty === "JWT") {
             // we have a nested JWT with encrypted payload (JWE).
             // Encrypted nested JWT may replicate some claims in the header to be publicly accessible.
-            return tslib_1.__assign({}, header, new JWTHeader());
+            return __assign(__assign({}, header), new JWTHeader());
         }
         else {
             // unencrypted payload, use claims from the payload only
