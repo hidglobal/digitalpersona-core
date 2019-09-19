@@ -1,6 +1,6 @@
 import { Utf16 } from '../encoders';
 import { ClaimSet } from './claims';
-import { User } from '../users';
+import { User } from '../users/user';
 
 /** Represents a JSON Web Token Header. */
 class JWTHeader {
@@ -19,8 +19,9 @@ class JWTHeader {
     }
 }
 
-/** Alias type for a string representing a JSON Web Token. */
-export type JSONWebToken = string;
+/** Branded alias type for a string representing a JSON Web Token. */
+export type JSONWebToken = string
+                         & { encoding?: "jwt" };
 
 /** Represents a JSON Web Token and gives access to the token's payload.
  * Note that this class does not allow to validate the token signature in the browser,

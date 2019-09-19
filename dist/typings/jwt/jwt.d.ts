@@ -1,6 +1,8 @@
 import { ClaimSet } from './claims';
-/** Alias type for a string representing a JSON Web Token. */
-export declare type JSONWebToken = string;
+/** Branded alias type for a string representing a JSON Web Token. */
+export declare type JSONWebToken = string & {
+    encoding?: "jwt";
+};
 /** Represents a JSON Web Token and gives access to the token's payload.
  * Note that this class does not allow to validate the token signature in the browser,
  * it must be done on a server side.

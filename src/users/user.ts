@@ -1,5 +1,5 @@
 import { UserNameType } from './userNameType';
-import { JWT, JSONWebToken } from '../jwt';
+import { JWT, JSONWebToken } from '../jwt/jwt';
 
 /**
  * Represents a user's identity using a user's name name and a type of the name.

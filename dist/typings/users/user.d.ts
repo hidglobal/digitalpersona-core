@@ -1,5 +1,5 @@
 import { UserNameType } from './userNameType';
-import { JSONWebToken } from '../jwt';
+import { JSONWebToken } from '../jwt/jwt';
 /**
  * Represents a user's identity using a user's name name and a type of the name.
  * This class is typially used to pass a user name during authentication.

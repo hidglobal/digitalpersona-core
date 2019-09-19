@@ -1,5 +1,5 @@
 import { Utf16 } from '../encoders';
-import { User } from '../users';
+import { User } from '../users/user';
 /** Represents a JSON Web Token Header. */
 class JWTHeader {
     /** Constructs a JWT header. */

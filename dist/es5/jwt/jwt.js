@@ -1,6 +1,6 @@
 import { __assign } from "tslib";
 import { Utf16 } from '../encoders';
-import { User } from '../users';
+import { User } from '../users/user';
 /** Represents a JSON Web Token Header. */
 var JWTHeader = /** @class */ (function () {
     /** Constructs a JWT header. */
